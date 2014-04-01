@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arctis="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10 pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6 pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw">
+  <uml:Package xmi:id="_XMjUMLnIEeOcSpJPh7SljQ" name="deniro">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_XMj7QLnIEeOcSpJPh7SljQ" name="User" classifierBehavior="_XQA34LnIEeOcSpJPh7SljQ" group="_XMkiULnIEeOcSpJPh7SljQ" partition="_XMkiULnIEeOcSpJPh7SljQ">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_XQA34LnIEeOcSpJPh7SljQ" name="User">
+        <region xmi:id="_XQBe8bnIEeOcSpJPh7SljQ" name="&lt;region>">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_XQCGALnIEeOcSpJPh7SljQ" name="&lt;initial>"/>
+        </region>
+      </ownedBehavior>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_XMkiULnIEeOcSpJPh7SljQ" name="main"/>
+    </packagedElement>
+    <profileApplication xmi:id="_XMjUMbnIEeOcSpJPh7SljQ">
+      <eAnnotations xmi:id="_XMjUMrnIEeOcSpJPh7SljQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_rE77YK4iEduZSuTiwKs5Lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XMlJYLnIEeOcSpJPh7SljQ">
+      <eAnnotations xmi:id="_XMlJYbnIEeOcSpJPh7SljQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_UEANMUVlEduH9aQE_pc66w"/>
+    </profileApplication>
+  </uml:Package>
+  <graphics:Shape xmi:id="_XP_CsLnIEeOcSpJPh7SljQ" x="180" y="55" width="613" height="54" base_Element="_XMj7QLnIEeOcSpJPh7SljQ"/>
+  <graphics:Shape xmi:id="_XQAQ0LnIEeOcSpJPh7SljQ" x="180" y="108" width="613" height="415" base_Element="_XMkiULnIEeOcSpJPh7SljQ"/>
+  <arctis:esm xmi:id="_XQBe8LnIEeOcSpJPh7SljQ" base_StateMachine="_XQA34LnIEeOcSpJPh7SljQ"/>
+</xmi:XMI>
