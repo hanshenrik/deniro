@@ -6,4 +6,7 @@
     session="multi_session" 
     type="block" 
     >
+    <required>
+        <block name="c1" uuid="__Kj2YbptEeOyef4cR_3goA"/>
+    </required>
 </block>

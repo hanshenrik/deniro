@@ -3,4 +3,7 @@
     version="1.0.0" 
     uuid="_fHLTULnGEeOcSpJPh7SljQ" 
     >
+    <dependencies>
+        <dependency name="no.ntnu.item.arctis.library.sessions" uuid="_ux8bAGJMEeGZ-NNKhUo_kg" version="1.5.1"/>
+    </dependencies>
 </project>
