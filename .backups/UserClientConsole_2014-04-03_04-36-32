@@ -9,8 +9,6 @@
           <transition xmi:id="_Vvhh8Ls7EeOU8uvDTuSCTw" name=" / close" source="_VvfFsLs7EeOU8uvDTuSCTw" target="_Vvhh8bs7EeOU8uvDTuSCTw"/>
           <transition xmi:id="_qCJGkLs7EeOU8uvDTuSCTw" name="stringInput / createRequest" source="_VvfFsLs7EeOU8uvDTuSCTw" target="_VvfFsLs7EeOU8uvDTuSCTw"/>
           <transition xmi:id="_tdhoULs7EeOU8uvDTuSCTw" name="stringInput / cancelRequest" source="_VvfFsLs7EeOU8uvDTuSCTw" target="_VvfFsLs7EeOU8uvDTuSCTw"/>
-          <transition xmi:id="_gzwZgLs9EeO075UR0_-ykw" name=" / createRequest" source="_VvfFsLs7EeOU8uvDTuSCTw" target="_VvfFsLs7EeOU8uvDTuSCTw"/>
-          <transition xmi:id="_h3RE8Ls9EeO075UR0_-ykw" name=" / cancelRequest" source="_VvfFsLs7EeOU8uvDTuSCTw" target="_VvfFsLs7EeOU8uvDTuSCTw"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_VveeoLs7EeOU8uvDTuSCTw" name="&lt;initial>"/>
           <subvertex xmi:type="uml:State" xmi:id="_VvfFsLs7EeOU8uvDTuSCTw" name="active"/>
           <subvertex xmi:type="uml:FinalState" xmi:id="_Vvhh8bs7EeOU8uvDTuSCTw" name="&lt;final>"/>
@@ -114,6 +112,4 @@
   <arctis:event xmi:id="_VviJALs7EeOU8uvDTuSCTw" base_Transition="_Vvhh8Ls7EeOU8uvDTuSCTw" effects="__Kj2hLptEeOyef4cR_3goA"/>
   <arctis:event xmi:id="_qCJtoLs7EeOU8uvDTuSCTw" base_Transition="_qCJGkLs7EeOU8uvDTuSCTw" triggers="__Kj2f7ptEeOyef4cR_3goA" effects="_S99goLs4EeOU8uvDTuSCTw"/>
   <arctis:event xmi:id="_tdiPYLs7EeOU8uvDTuSCTw" base_Transition="_tdhoULs7EeOU8uvDTuSCTw" triggers="__Kj2f7ptEeOyef4cR_3goA" effects="_G1ImQLs7EeOU8uvDTuSCTw"/>
-  <arctis:event xmi:id="_g2HxALs9EeO075UR0_-ykw" base_Transition="_gzwZgLs9EeO075UR0_-ykw" effects="_S99goLs4EeOU8uvDTuSCTw"/>
-  <arctis:event xmi:id="_h3RsALs9EeO075UR0_-ykw" base_Transition="_h3RE8Ls9EeO075UR0_-ykw" effects="_G1ImQLs7EeOU8uvDTuSCTw"/>
 </xmi:XMI>

@@ -4,14 +4,14 @@
     <packagedElement xmi:type="uml:Activity" xmi:id="_XMj7QLnIEeOcSpJPh7SljQ" name="User" classifierBehavior="_XQA34LnIEeOcSpJPh7SljQ" group="_XMkiULnIEeOcSpJPh7SljQ" partition="_XMkiULnIEeOcSpJPh7SljQ" node="_S2LhILnZEeOcSpJPh7SljQ _V0cpELnZEeOcSpJPh7SljQ _OG0bULpjEeOyef4cR_3goA _aMWlkLpqEeOyef4cR_3goA _EjSOkLpuEeOyef4cR_3goA _Qrkx0Ls5EeOU8uvDTuSCTw _UUOTgLs5EeOU8uvDTuSCTw _3yMgoLs8EeO075UR0_-ykw _88JdALs8EeO075UR0_-ykw _EF_tMLtAEeO075UR0_-ykw _LxY5ULtFEeO075UR0_-ykw">
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_XQA34LnIEeOcSpJPh7SljQ" name="User">
         <region xmi:id="_XQBe8bnIEeOcSpJPh7SljQ" name="&lt;region>">
-          <transition xmi:id="_QOL0wbtFEeO075UR0_-ykw" name="init / " source="_QOLNsLtFEeO075UR0_-ykw" target="_QOL0wLtFEeO075UR0_-ykw"/>
-          <transition xmi:id="_QOMb0btFEeO075UR0_-ykw" name=" / close" source="_QOL0wLtFEeO075UR0_-ykw" target="_QONC4LtFEeO075UR0_-ykw"/>
-          <transition xmi:id="_QONp8btFEeO075UR0_-ykw" name=" / cancelRequest" source="_QOL0wLtFEeO075UR0_-ykw" target="_QOL0wLtFEeO075UR0_-ykw"/>
-          <transition xmi:id="_QOORAbtFEeO075UR0_-ykw" name=" / sendRequest" source="_QOL0wLtFEeO075UR0_-ykw" target="_QOL0wLtFEeO075UR0_-ykw"/>
-          <transition xmi:id="_QOO4EbtFEeO075UR0_-ykw" name="message / " source="_QOL0wLtFEeO075UR0_-ykw" target="_QOL0wLtFEeO075UR0_-ykw"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_QOLNsLtFEeO075UR0_-ykw" name="&lt;initial>"/>
-          <subvertex xmi:type="uml:State" xmi:id="_QOL0wLtFEeO075UR0_-ykw" name="active"/>
-          <subvertex xmi:type="uml:FinalState" xmi:id="_QONC4LtFEeO075UR0_-ykw" name="&lt;final>"/>
+          <transition xmi:id="_QC_DoLtAEeO075UR0_-ykw" name="init / " source="_QC91gLtAEeO075UR0_-ykw" target="_QC-ckLtAEeO075UR0_-ykw"/>
+          <transition xmi:id="_QC_qsbtAEeO075UR0_-ykw" name=" / close" source="_QC-ckLtAEeO075UR0_-ykw" target="_QDARwLtAEeO075UR0_-ykw"/>
+          <transition xmi:id="_QDA40btAEeO075UR0_-ykw" name=" / cancelRequest" source="_QC-ckLtAEeO075UR0_-ykw" target="_QC-ckLtAEeO075UR0_-ykw"/>
+          <transition xmi:id="_QDBf4btAEeO075UR0_-ykw" name=" / sendRequest" source="_QC-ckLtAEeO075UR0_-ykw" target="_QC-ckLtAEeO075UR0_-ykw"/>
+          <transition xmi:id="_QDCG8btAEeO075UR0_-ykw" name="message / " source="_QC-ckLtAEeO075UR0_-ykw" target="_QC-ckLtAEeO075UR0_-ykw"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_QC91gLtAEeO075UR0_-ykw" name="&lt;initial>"/>
+          <subvertex xmi:type="uml:State" xmi:id="_QC-ckLtAEeO075UR0_-ykw" name="active"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_QDARwLtAEeO075UR0_-ykw" name="&lt;final>"/>
         </region>
       </ownedBehavior>
       <ownedOperation xmi:id="_41C8QLphEeOyef4cR_3goA" name="getAlias"/>
@@ -157,10 +157,10 @@
   <arctis:event xmi:id="_imtk4Ls9EeO075UR0_-ykw" base_Transition="_ims90Ls9EeO075UR0_-ykw" effects="_KHYsELs5EeOU8uvDTuSCTw"/>
   <arctis:event xmi:id="_imuzALs9EeO075UR0_-ykw" base_Transition="_imuL8Ls9EeO075UR0_-ykw" effects="_KHZTILs5EeOU8uvDTuSCTw"/>
   <graphics:Shape xmi:id="_EGKFQLtAEeO075UR0_-ykw" x="54" y="270" base_Element="_EF_tMLtAEeO075UR0_-ykw" orientation="west"/>
-  <graphics:Shape xmi:id="_LxiDQLtFEeO075UR0_-ykw" x="180" y="360" width="163" height="55" base_Element="_LxY5ULtFEeO075UR0_-ykw"/>
-  <arctis:event xmi:id="_QOMb0LtFEeO075UR0_-ykw" base_Transition="_QOL0wbtFEeO075UR0_-ykw" triggers="_S2LhILnZEeOcSpJPh7SljQ"/>
-  <arctis:event xmi:id="_QONp8LtFEeO075UR0_-ykw" base_Transition="_QOMb0btFEeO075UR0_-ykw" effects="_V0cpELnZEeOcSpJPh7SljQ"/>
-  <arctis:event xmi:id="_QOORALtFEeO075UR0_-ykw" base_Transition="_QONp8btFEeO075UR0_-ykw" effects="_3yMgoLs8EeO075UR0_-ykw"/>
-  <arctis:event xmi:id="_QOO4ELtFEeO075UR0_-ykw" base_Transition="_QOORAbtFEeO075UR0_-ykw" effects="_88JdALs8EeO075UR0_-ykw"/>
-  <arctis:event xmi:id="_QOPfILtFEeO075UR0_-ykw" base_Transition="_QOO4EbtFEeO075UR0_-ykw" triggers="_EF_tMLtAEeO075UR0_-ykw"/>
+  <arctis:event xmi:id="_QC_qsLtAEeO075UR0_-ykw" base_Transition="_QC_DoLtAEeO075UR0_-ykw" triggers="_S2LhILnZEeOcSpJPh7SljQ"/>
+  <arctis:event xmi:id="_QDA40LtAEeO075UR0_-ykw" base_Transition="_QC_qsbtAEeO075UR0_-ykw" effects="_V0cpELnZEeOcSpJPh7SljQ"/>
+  <arctis:event xmi:id="_QDBf4LtAEeO075UR0_-ykw" base_Transition="_QDA40btAEeO075UR0_-ykw" effects="_3yMgoLs8EeO075UR0_-ykw"/>
+  <arctis:event xmi:id="_QDCG8LtAEeO075UR0_-ykw" base_Transition="_QDBf4btAEeO075UR0_-ykw" effects="_88JdALs8EeO075UR0_-ykw"/>
+  <arctis:event xmi:id="_QDCuALtAEeO075UR0_-ykw" base_Transition="_QDCG8btAEeO075UR0_-ykw" triggers="_EF_tMLtAEeO075UR0_-ykw"/>
+  <graphics:Shape xmi:id="_LxiDQLtFEeO075UR0_-ykw" x="180" y="360" width="199" height="55" base_Element="_LxY5ULtFEeO075UR0_-ykw"/>
 </xmi:XMI>

@@ -18,7 +18,7 @@ public class UserClientConsole extends Block {
 private JFrame frame;
 private JTextArea textArea;
 
-		public void show() {
+	public void show() {
 		frame = new JFrame("User Client Console");
 		Dimension screenSize=Toolkit.getDefaultToolkit().getScreenSize();
 		Dimension frameSize=new Dimension((int)(screenSize.width/4),(int)(screenSize.height/4));
@@ -27,33 +27,41 @@ private JTextArea textArea;
 		frame.setBounds(x,y,frameSize.width,frameSize.height);
 		
 		//frame.getContentPane().setLayout(new GridLayout(4,3,10,10));
-		Button button = new Button("Order");
-		button.addActionListener(new ActionListener() {
+		Button request = new Button("Request");
+		request.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				sendToBlock("CLICKED");
+				sendToBlock("REQUEST");
 			}
-
 		});
-		frame.getContentPane().add(button);
+		
+		Button cancel = new Button("Cancel");
+		cancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				sendToBlock("CANCEL");
+			}
+		});
+		
+		frame.getContentPane().add(request);
+		frame.getContentPane().add(cancel);
 		
 		textArea = new JTextArea();
 		textArea.setEditable(false);
 		
-
 		frame.getContentPane().setLayout(new BorderLayout());
-		frame.getContentPane().add(new JScrollPane(textArea),BorderLayout.CENTER);
-		frame.getContentPane().add(button,BorderLayout.SOUTH);
+		frame.getContentPane().add(new JScrollPane(textArea), BorderLayout.CENTER);
+		frame.getContentPane().add(request, BorderLayout.NORTH);
+		frame.getContentPane().add(cancel, BorderLayout.SOUTH);
 		frame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				sendToBlock("CLOSED");
 			}
 		});
+		
 		frame.setVisible(true);
 		//frame.pack();
 	}
 
-		public void updateConsole(String arg) {
-		System.out.println("### here?");
+	public void updateConsole(String arg) {
 		textArea.setText(arg);
-		}
+	}
 }
