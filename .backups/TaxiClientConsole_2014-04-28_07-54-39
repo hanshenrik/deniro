@@ -69,7 +69,7 @@
       <appliedProfile href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_UEANMUVlEduH9aQE_pc66w"/>
     </profileApplication>
   </uml:Package>
-  <graphics:Shape xmi:id="_55lWFLp2EeOyef4cR_3goA" x="180" y="54" width="613" height="55" base_Element="_55lV4bp2EeOyef4cR_3goA"/>
+  <graphics:Shape xmi:id="_55lWFLp2EeOyef4cR_3goA" x="180" y="55" width="613" height="54" base_Element="_55lV4bp2EeOyef4cR_3goA"/>
   <graphics:Shape xmi:id="_55lWFbp2EeOyef4cR_3goA" x="180" y="108" width="613" height="415" base_Element="_55lV9Lp2EeOyef4cR_3goA"/>
   <arctis:esm xmi:id="_55lWFrp2EeOyef4cR_3goA" base_StateMachine="_55lV4rp2EeOyef4cR_3goA"/>
   <graphics:Shape xmi:id="_55lWF7p2EeOyef4cR_3goA" x="252" y="396" width="200" height="55" base_Element="_55lV_bp2EeOyef4cR_3goA" orientation="south"/>

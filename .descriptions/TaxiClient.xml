@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <block
-    name="Taxi" 
-    uuid="_EgUekLnIEeOcSpJPh7SljQ" 
+    name="TaxiClient" 
+    uuid="_USGZgM72EeONUtTfPeAIMw" 
     status="under construction" 
-    session="multi_session" 
     type="block" 
     >
     <required>
-        <block name="c0" uuid="_USGZgM72EeONUtTfPeAIMw"/>
+        <block name="c0" uuid="_55lV4bp2EeOyef4cR_3goA"/>
     </required>
 </block>

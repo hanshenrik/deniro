@@ -20,16 +20,16 @@ public class User extends Block {
 
 	public String cancelRequest() {
 		int orderID = 0; // make dynamic
-		System.out.println("User: Request with orderID " + orderID + " cancelled!");
+		System.out.println("User: Request with orderID " + orderID + " at user " + alias_userClientID + " cancelled!");
 		return alias_userClientID;
-	}
-	
-	public static String getAlias(Order order) {
-		return order.getUserClientID();
 	}
 	
 	public static String getAlias(String alias) {
 		return alias;
+	}
+	
+	public static String getAlias(Order order) {
+		return order.getUserClientID();
 	}
 	
 	public String extractMessage(Order order) {

@@ -53,7 +53,6 @@ private JTextArea textArea;
 	}
 
 		public void updateConsole(String arg) {
-		System.out.println("### here?");
 		textArea.setText(arg);
 		}
 }
