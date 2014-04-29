@@ -11,15 +11,13 @@ public class User extends Block {
 	public java.lang.String alias_userClientID;
 	
 	public Order createRequest(String request) {
-		System.out.println("User: This is what the user has written in the input field: " + request);
-		
 		String[] params = request.split(";");
 		
 		String address = params[0];
 		
 		// default values for type and time
 		String taxiType = "regular";
-		String time = "now"; //make into actual time?
+		String time = "now";
 		
 		if (params.length == 2) {
 			// we need to find out if time or type is specified
@@ -40,7 +38,7 @@ public class User extends Block {
 		
 		Order order = new Order(alias_userClientID, address, taxiType, time);
 		System.out.println("User: Request from user " + order.getUserClientID() +
-				" created at user side! Order info: " + order.getOrderInfo());
+				" created at user side! " + order.getOrderInfo());
 		return order;
 	}
 
