@@ -12,7 +12,7 @@
         </region>
       </ownedBehavior>
       <ownedParameter xmi:id="_6-fFUM-nEeOZud_tbAga3w" name="end" direction="out"/>
-      <ownedParameter xmi:id="_FsVIEM-oEeOZud_tbAga3w" name="mapUpdate" direction="out" isStream="true"/>
+      <ownedParameter xmi:id="_FsVIEM-oEeOZud_tbAga3w" name="mapUpdate" type="_hSV3RM-nEeOZud_tbAga3w" direction="out" isStream="true"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_xJ17cM-nEeOZud_tbAga3w" name="e0" inPartition="_oIal8M-hEeOZud_tbAga3w" source="_kVCMMM-nEeOZud_tbAga3w" target="_judUYM-nEeOZud_tbAga3w"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_-CxVsM-nEeOZud_tbAga3w" name="e1" inPartition="_oIal8M-hEeOZud_tbAga3w" source="_jud7cM-nEeOZud_tbAga3w" target="_9AjqwM-nEeOZud_tbAga3w"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_-Q21AM-nEeOZud_tbAga3w" name="e2" inPartition="_oIal8M-hEeOZud_tbAga3w" source="_9AjqwM-nEeOZud_tbAga3w" target="_6-cCAM-nEeOZud_tbAga3w"/>
@@ -33,7 +33,7 @@
       <node xmi:type="uml:AcceptEventAction" xmi:id="_9AjqwM-nEeOZud_tbAga3w" name="t0" inPartition="_oIal8M-hEeOZud_tbAga3w" outgoing="_-Q21AM-nEeOZud_tbAga3w" incoming="_-CxVsM-nEeOZud_tbAga3w">
         <trigger xmi:id="_9Ajqwc-nEeOZud_tbAga3w" name="t0" event="_9AjDsM-nEeOZud_tbAga3w"/>
       </node>
-      <node xmi:type="uml:ActivityParameterNode" xmi:id="_FsSEwM-oEeOZud_tbAga3w" name="mapUpdate" inPartition="_oIal8M-hEeOZud_tbAga3w" incoming="_IWvf4M-oEeOZud_tbAga3w" parameter="_FsVIEM-oEeOZud_tbAga3w"/>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_FsSEwM-oEeOZud_tbAga3w" name="mapUpdate" inPartition="_oIal8M-hEeOZud_tbAga3w" incoming="_IWvf4M-oEeOZud_tbAga3w" type="_hSV3RM-nEeOZud_tbAga3w" parameter="_FsVIEM-oEeOZud_tbAga3w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_hSVQM8-nEeOZud_tbAga3w" name="java.lang.String"/>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_hSV3RM-nEeOZud_tbAga3w" name="com.bitreactive.library.android.maps.model.MapUpdate"/>
@@ -116,16 +116,16 @@
     </profileApplication>
   </uml:Package>
   <graphics:Shape xmi:id="_oKoMcM-hEeOZud_tbAga3w" x="180" y="55" width="613" height="54" base_Element="_oIZ-4s-hEeOZud_tbAga3w"/>
-  <graphics:Shape xmi:id="_oKozgM-hEeOZud_tbAga3w" x="180" y="108" width="613" height="415" base_Element="_oIal8M-hEeOZud_tbAga3w"/>
+  <graphics:Shape xmi:id="_oKozgM-hEeOZud_tbAga3w" x="180" y="108" width="433" height="415" base_Element="_oIal8M-hEeOZud_tbAga3w"/>
   <arctis:esm xmi:id="_oKpakM-hEeOZud_tbAga3w" base_StateMachine="_oKozgc-hEeOZud_tbAga3w"/>
   <arctis:esm xmi:id="_jubfMM-nEeOZud_tbAga3w" base_StateMachine="_jua4IM-nEeOZud_tbAga3w"/>
   <arctis:event xmi:id="_jubfNs-nEeOZud_tbAga3w" base_Transition="_jubfNc-nEeOZud_tbAga3w" triggers="_juZqBM-nEeOZud_tbAga3w"/>
   <arctis:event xmi:id="_jucGQc-nEeOZud_tbAga3w" base_Transition="_jucGQM-nEeOZud_tbAga3w" effects="_juaREc-nEeOZud_tbAga3w"/>
   <arctis:event xmi:id="_juctUc-nEeOZud_tbAga3w" base_Transition="_juctUM-nEeOZud_tbAga3w" effects="_juaRE8-nEeOZud_tbAga3w"/>
-  <graphics:Shape xmi:id="_jufJkM-nEeOZud_tbAga3w" x="1" y="36" base_Element="_jueigM-nEeOZud_tbAga3w" orientation="east"/>
+  <graphics:Shape xmi:id="_jufJkM-nEeOZud_tbAga3w" x="35" y="51" base_Element="_jueigM-nEeOZud_tbAga3w" orientation="east"/>
   <graphics:Shape xmi:id="_jufwoM-nEeOZud_tbAga3w" x="18" y="18" base_Element="_jud7cM-nEeOZud_tbAga3w" orientation="south"/>
   <graphics:Shape xmi:id="_jufwoc-nEeOZud_tbAga3w" x="18" y="18" base_Element="_judUYM-nEeOZud_tbAga3w" orientation="north"/>
-  <graphics:Shape xmi:id="_jugXsM-nEeOZud_tbAga3w" x="270" y="324" width="198" height="144" base_Element="_juX00M-nEeOZud_tbAga3w"/>
+  <graphics:Shape xmi:id="_jugXsM-nEeOZud_tbAga3w" x="252" y="234" width="198" height="144" base_Element="_juX00M-nEeOZud_tbAga3w"/>
   <arctis:esm xmi:id="_kU96ws-nEeOZud_tbAga3w" base_StateMachine="_kU9Tss-nEeOZud_tbAga3w"/>
   <arctis:event xmi:id="_kU-h0s-nEeOZud_tbAga3w" base_Transition="_kU-h0c-nEeOZud_tbAga3w" triggers="_kU7ehM-nEeOZud_tbAga3w"/>
   <arctis:event xmi:id="_kU_I4c-nEeOZud_tbAga3w" base_Transition="_kU_I4M-nEeOZud_tbAga3w" effects="_kU8FkM-nEeOZud_tbAga3w"/>
@@ -135,10 +135,10 @@
   <graphics:Shape xmi:id="_kVFPgc-nEeOZud_tbAga3w" x="124" y="52" base_Element="_kVCzQM-nEeOZud_tbAga3w" orientation="south"/>
   <graphics:Shape xmi:id="_kVFPgs-nEeOZud_tbAga3w" x="249" y="53" base_Element="_kVEBYM-nEeOZud_tbAga3w" orientation="south"/>
   <graphics:Shape xmi:id="_kVF2kM-nEeOZud_tbAga3w" x="18" y="18" base_Element="_kVBlIM-nEeOZud_tbAga3w" orientation="north"/>
-  <graphics:Shape xmi:id="_kVGdoM-nEeOZud_tbAga3w" x="270" y="252" width="324" height="72" base_Element="_kU5pUM-nEeOZud_tbAga3w"/>
-  <graphics:Shape xmi:id="_6-hhkM-nEeOZud_tbAga3w" x="306" y="522" base_Element="_6-cCAM-nEeOZud_tbAga3w"/>
-  <graphics:Shape xmi:id="_9BTRoM-nEeOZud_tbAga3w" x="297" y="477" width="37" height="37" base_Element="_9AjqwM-nEeOZud_tbAga3w"/>
-  <graphics:Shape xmi:id="_FsW9QM-oEeOZud_tbAga3w" x="792" y="378" base_Element="_FsSEwM-oEeOZud_tbAga3w" orientation="east"/>
+  <graphics:Shape xmi:id="_kVGdoM-nEeOZud_tbAga3w" x="252" y="144" width="324" height="72" base_Element="_kU5pUM-nEeOZud_tbAga3w"/>
+  <graphics:Shape xmi:id="_6-hhkM-nEeOZud_tbAga3w" x="288" y="522" base_Element="_6-cCAM-nEeOZud_tbAga3w"/>
+  <graphics:Shape xmi:id="_9BTRoM-nEeOZud_tbAga3w" x="279" y="459" width="37" height="37" base_Element="_9AjqwM-nEeOZud_tbAga3w"/>
+  <graphics:Shape xmi:id="_FsW9QM-oEeOZud_tbAga3w" x="612" y="288" base_Element="_FsSEwM-oEeOZud_tbAga3w" orientation="east"/>
   <arctis:event xmi:id="_FnB74M-pEeOZud_tbAga3w" base_Transition="_FnBU0M-pEeOZud_tbAga3w" effects="_6-cCAM-nEeOZud_tbAga3w"/>
   <arctis:event xmi:id="_FnB74s-pEeOZud_tbAga3w" base_Transition="_FnB74c-pEeOZud_tbAga3w" effects="_FsSEwM-oEeOZud_tbAga3w"/>
 </xmi:XMI>
