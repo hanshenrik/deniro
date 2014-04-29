@@ -17,7 +17,7 @@
       <ownedParameter xmi:id="_OhtJYM8QEeONUtTfPeAIMw" name="init" type="_HU8nws8QEeONUtTfPeAIMw"/>
       <ownedParameter xmi:id="_RGYFkM8QEeONUtTfPeAIMw" name="close" direction="out"/>
       <ownedParameter xmi:id="_nk_AoM8QEeONUtTfPeAIMw" name="message" type="_HU8nws8QEeONUtTfPeAIMw" isStream="true"/>
-      <ownedParameter xmi:id="_Apfm8M8REeONUtTfPeAIMw" name="createRequest" type="_HU8nws8QEeONUtTfPeAIMw" direction="out" isStream="true"/>
+      <ownedParameter xmi:id="_Apfm8M8REeONUtTfPeAIMw" name="createRequest" direction="out" isStream="true"/>
       <ownedParameter xmi:id="_C_bjkM8REeONUtTfPeAIMw" name="cancelRequest" direction="out" isStream="true"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_VxABoM8QEeONUtTfPeAIMw" name="e0" inPartition="_-QHKMM8PEeONUtTfPeAIMw" source="_UbVPMM8QEeONUtTfPeAIMw" target="_RGR-8M8QEeONUtTfPeAIMw"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_tSq1YM-CEeOFaL2LUqCzSA" name="e1" inPartition="_-QHKMM8PEeONUtTfPeAIMw" source="_qHw_oM-CEeOFaL2LUqCzSA" target="_ApaHYM8REeONUtTfPeAIMw"/>
@@ -32,7 +32,7 @@
         <trigger xmi:id="_UbVPMc8QEeONUtTfPeAIMw" name="t0" event="_UbUoIM8QEeONUtTfPeAIMw"/>
       </node>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_nk4S8M8QEeONUtTfPeAIMw" name="message" inPartition="_-QHKMM8PEeONUtTfPeAIMw" outgoing="_uxaEQM-CEeOFaL2LUqCzSA" type="_HU8nws8QEeONUtTfPeAIMw" parameter="_nk_AoM8QEeONUtTfPeAIMw"/>
-      <node xmi:type="uml:ActivityParameterNode" xmi:id="_ApaHYM8REeONUtTfPeAIMw" name="createRequest" inPartition="_-QHKMM8PEeONUtTfPeAIMw" incoming="_tSq1YM-CEeOFaL2LUqCzSA" type="_HU8nws8QEeONUtTfPeAIMw" parameter="_Apfm8M8REeONUtTfPeAIMw"/>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_ApaHYM8REeONUtTfPeAIMw" name="createRequest" inPartition="_-QHKMM8PEeONUtTfPeAIMw" incoming="_tSq1YM-CEeOFaL2LUqCzSA" parameter="_Apfm8M8REeONUtTfPeAIMw"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_C_Vc8M8REeONUtTfPeAIMw" name="cancelRequest" inPartition="_-QHKMM8PEeONUtTfPeAIMw" incoming="_ts1B0M-CEeOFaL2LUqCzSA" parameter="_C_bjkM8REeONUtTfPeAIMw"/>
       <node xmi:type="uml:CallBehaviorAction" xmi:id="_qEPKgM-CEeOFaL2LUqCzSA" name="c0" inPartition="_-QHKMM8PEeONUtTfPeAIMw" behavior="_0vEpoaOdEeOlvM2Rtrpuog">
         <argument xmi:id="_qHvKcM-CEeOFaL2LUqCzSA" name="init" inPartition="_-QHKMM8PEeONUtTfPeAIMw" incoming="_wca0kM-CEeOFaL2LUqCzSA" type="_HU8nws8QEeONUtTfPeAIMw"/>

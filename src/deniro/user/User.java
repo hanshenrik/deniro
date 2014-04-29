@@ -1,16 +1,46 @@
 package deniro.user;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import no.ntnu.item.arctis.runtime.Block;
 import deniro.user.Order;
 
 public class User extends Block {
 
 	public java.lang.String alias_userClientID;
-	public java.lang.String pickUpAddress;
 	
-	public Order createRequest() {
-		Order order = new Order(alias_userClientID, "maxi", pickUpAddress);
-		System.out.println("User: Request from user " + order.getUserClientID() + "created at user side!");
+	public Order createRequest(String request) {
+		System.out.println("User: This is what the user has written in the input field: " + request);
+		
+		String[] params = request.split(";");
+		
+		String address = params[0];
+		
+		// default values for type and time
+		String taxiType = "regular";
+		String time = "now"; //make into actual time?
+		
+		if (params.length == 2) {
+			// we need to find out if time or type is specified
+			Pattern pattern = Pattern.compile("(\\d{2}:\\d{2})");
+			Matcher matcher = pattern.matcher(params[1]);
+			
+			if (matcher.find()) {
+				time = params[1];
+			} else {
+				taxiType = params[1];
+			}
+		}
+		
+		else if (params.length == 3) {
+			taxiType = params[1];
+			time = params[2];
+		}
+		
+		Order order = new Order(alias_userClientID, address, taxiType, time);
+		System.out.println("User: Request from user " + order.getUserClientID() +
+				" created at user side! Order info: " + order.getOrderInfo());
 		return order;
 	}
 

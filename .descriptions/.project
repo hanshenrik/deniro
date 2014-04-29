@@ -5,5 +5,6 @@
     >
     <dependencies>
         <dependency name="no.ntnu.item.arctis.library.sessions" uuid="_ux8bAGJMEeGZ-NNKhUo_kg" version="1.5.1"/>
+        <dependency name="no.ntnu.item.ttm4115.termassignment" uuid="_NuSVsKOdEeOlvM2Rtrpuog" version="2.4.4"/>
     </dependencies>
 </project>

@@ -3,13 +3,15 @@ package deniro.user;
 public class Order {
 
 	private String userClientID;
-	private String taxiType;
 	private String address;
+	private String taxiType;
+	private String time;
 	
-	public Order(String userClientID, String taxiType, String address) {
+	public Order(String userClientID, String address, String taxiType, String time) {
 		setUserClientID(userClientID);
-		setTaxiType(taxiType);
 		setAddress(address);
+		setTaxiType(taxiType);
+		setTime(time);
 	}
 	
 	public void setUserClientID(String userClientID) {
@@ -18,14 +20,6 @@ public class Order {
 	
 	public String getUserClientID() {
 		return userClientID;
-	}
-	
-	private void setTaxiType(String taxiType) {
-		this.taxiType = taxiType;
-	}
-
-	public String getTaxiType() {
-		return taxiType;
 	}
 
 	public String getAddress() {
@@ -36,7 +30,24 @@ public class Order {
 		this.address = address;
 	}
 	
-	public String getOrderInfo() {
-		return "This is the info of the order";
+	private void setTaxiType(String taxiType) {
+		this.taxiType = taxiType;
 	}
+
+	public String getTaxiType() {
+		return taxiType;
+	}
+	
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
+	}
+	
+	public String getOrderInfo() {
+		return "Order info: " + getUserClientID() + ", " + getAddress() + ", " + getTaxiType() + ", " + getTime();
+	}
+	
 }
