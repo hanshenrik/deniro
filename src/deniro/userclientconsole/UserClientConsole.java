@@ -27,30 +27,38 @@ private JTextArea textArea;
 		frame.setBounds(x,y,frameSize.width,frameSize.height);
 		
 		//frame.getContentPane().setLayout(new GridLayout(4,3,10,10));
-		Button request = new Button("Request");
-		request.addActionListener(new ActionListener() {
+		Button requested = new Button("Requested");
+		requested.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				sendToBlock("REQUEST");
+				sendToBlock("REQUESTED");
 			}
 		});
 		
-		Button cancel = new Button("Cancel");
-		cancel.addActionListener(new ActionListener() {
+		Button cancelled = new Button("Cancelled");
+		cancelled.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				sendToBlock("CANCEL");
+				sendToBlock("CANCELLED");
 			}
 		});
 		
-		frame.getContentPane().add(request);
-		frame.getContentPane().add(cancel);
+		Button confirmAddress = new Button("Confirm Address");
+		requested.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				sendToBlock("ADDRESS");
+			}
+		});
+		
+		frame.getContentPane().add(requested);
+		frame.getContentPane().add(cancelled);
 		
 		textArea = new JTextArea();
 		textArea.setEditable(false);
 		
 		frame.getContentPane().setLayout(new BorderLayout());
 		frame.getContentPane().add(new JScrollPane(textArea), BorderLayout.CENTER);
-		frame.getContentPane().add(request, BorderLayout.NORTH);
-		frame.getContentPane().add(cancel, BorderLayout.SOUTH);
+		frame.getContentPane().add(requested, BorderLayout.NORTH);
+		frame.getContentPane().add(cancelled, BorderLayout.SOUTH);
+		frame.getContentPane().add(confirmAddress, BorderLayout.EAST);
 		frame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				sendToBlock("CLOSED");

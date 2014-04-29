@@ -6,21 +6,16 @@ import deniro.user.Order;
 public class User extends Block {
 
 	public java.lang.String alias_userClientID;
-	private int counter;
-
-	public User() {
-		this.counter = 0;
-	}
+	public java.lang.String pickUpAddress;
 	
 	public Order createRequest() {
-		Order order = new Order(counter++, alias_userClientID, "maxi");
-		System.out.println("User: Request with orderID "+order.getOrderID() +" created at user "+order.getUserClientID());
+		Order order = new Order(alias_userClientID, "maxi", pickUpAddress);
+		System.out.println("User: Request from user " + order.getUserClientID() + "created at user side!");
 		return order;
 	}
 
 	public String cancelRequest() {
-		int orderID = 0; // make dynamic
-		System.out.println("User: Request with orderID " + orderID + " at user " + alias_userClientID + " cancelled!");
+		System.out.println("User: Request from user " + alias_userClientID + " cancelled at user side!");
 		return alias_userClientID;
 	}
 	
@@ -33,6 +28,6 @@ public class User extends Block {
 	}
 	
 	public String extractMessage(Order order) {
-		return order.getTaxiType(); // change, just for testing for now
+		return order.getOrderInfo();
 	}
 }

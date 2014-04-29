@@ -5,8 +5,8 @@ import no.ntnu.item.arctis.runtime.Block;
 
 public class Component extends Block {
 
-	public Order createMessageTest() {
-		return new Order(0,"0","maxi");
+	public Order createMessageTest() { // to be removed
+		return new Order("0","maxi", "Berjaya Times Square");
 	}
 
 }
