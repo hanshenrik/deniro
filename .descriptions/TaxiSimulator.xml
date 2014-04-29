@@ -5,4 +5,8 @@
     status="under construction" 
     type="block" 
     >
+    <required>
+        <block name="c0" uuid="_IqxXsaPNEeOl8vvkd4XquA"/>
+        <block name="c1" uuid="_UoBM0aPNEeOl8vvkd4XquA"/>
+    </required>
 </block>
