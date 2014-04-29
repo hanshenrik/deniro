@@ -8,7 +8,7 @@ import deniro.user.Order;
 
 public class User extends Block {
 
-	public java.lang.String alias_userClientID;
+	public java.lang.String alias_userID;
 	
 	public Order createRequest(String request) {
 		String[] params = request.split(";");
@@ -36,15 +36,15 @@ public class User extends Block {
 			time = params[2];
 		}
 		
-		Order order = new Order(alias_userClientID, address, taxiType, time);
-		System.out.println("User: Request from user " + order.getUserClientID() +
+		Order order = new Order(alias_userID, address, taxiType, time);
+		System.out.println("User: Request from user " + order.getUserID() +
 				" created at user side! " + order.getOrderInfo());
 		return order;
 	}
 
 	public String cancelRequest() {
-		System.out.println("User: Request from user " + alias_userClientID + " cancelled at user side!");
-		return alias_userClientID;
+		System.out.println("User: Request from user " + alias_userID + " cancelled at user side!");
+		return alias_userID;
 	}
 	
 	public static String getAlias(String alias) {
@@ -52,10 +52,14 @@ public class User extends Block {
 	}
 	
 	public static String getAlias(Order order) {
-		return order.getUserClientID();
+		return order.getUserID();
 	}
 	
 	public String extractMessage(Order order) {
 		return order.getOrderInfo();
+	}
+
+	public String subscribeTo() {
+		return "taxiCentral";
 	}
 }

@@ -14,7 +14,7 @@ public class Taxi extends Block {
 	}
 	
 	public static String getAlias(Order order) {
-		return order.getUserClientID();
+		return order.getUserID();
 	}
 	
 	public String extractMessage(Order order) {

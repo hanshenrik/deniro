@@ -2,24 +2,24 @@ package deniro.user;
 
 public class Order {
 
-	private String userClientID;
+	private String userID;
 	private String address;
 	private String taxiType;
 	private String time;
 	
-	public Order(String userClientID, String address, String taxiType, String time) {
-		setUserClientID(userClientID);
+	public Order(String userID, String address, String taxiType, String time) {
+		setUserID(userID);
 		setAddress(address);
 		setTaxiType(taxiType);
 		setTime(time);
 	}
 	
-	public void setUserClientID(String userClientID) {
-		this.userClientID = userClientID;
+	public void setUserID(String userID) {
+		this.userID = userID;
 	}
 	
-	public String getUserClientID() {
-		return userClientID;
+	public String getUserID() {
+		return userID;
 	}
 
 	public String getAddress() {
@@ -47,7 +47,7 @@ public class Order {
 	}
 	
 	public String getOrderInfo() {
-		return "Order info: " + getUserClientID() + ", " + getAddress() + ", " + getTaxiType() + ", " + getTime();
+		return "Order info: " + getUserID() + ", " + getAddress() + ", " + getTaxiType() + ", " + getTime();
 	}
 	
 }
