@@ -7,6 +7,7 @@ public class Taxi extends Block {
 
 	public java.lang.String alias_taxiID;
 	public java.lang.String type;
+	public boolean availability;
 	
 	public static String getAlias(String alias) {
 		return alias;
@@ -17,6 +18,6 @@ public class Taxi extends Block {
 	}
 	
 	public String extractMessage(Order order) {
-		return order.getTaxiType(); // change, just for testing for now
+		return order.getOrderInfo();
 	}
 }

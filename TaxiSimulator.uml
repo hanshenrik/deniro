@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arctis="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10 pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6 pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw">
+  <uml:Package xmi:id="_oIZX0M-hEeOZud_tbAga3w" name="deniro">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_oIZ-4s-hEeOZud_tbAga3w" name="TaxiSimulator" classifierBehavior="_oKozgc-hEeOZud_tbAga3w" group="_oIal8M-hEeOZud_tbAga3w" partition="_oIal8M-hEeOZud_tbAga3w">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_oKozgc-hEeOZud_tbAga3w" name="TaxiSimulator">
+        <region xmi:id="_oKpakc-hEeOZud_tbAga3w" name="&lt;region>">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_oKpaks-hEeOZud_tbAga3w" name="&lt;initial>"/>
+        </region>
+      </ownedBehavior>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_oIal8M-hEeOZud_tbAga3w" name="main"/>
+    </packagedElement>
+    <profileApplication xmi:id="_oIZ-4M-hEeOZud_tbAga3w">
+      <eAnnotations xmi:id="_oIZ-4c-hEeOZud_tbAga3w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_rE77YK4iEduZSuTiwKs5Lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_oIal8c-hEeOZud_tbAga3w">
+      <eAnnotations xmi:id="_oIal8s-hEeOZud_tbAga3w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_UEANMUVlEduH9aQE_pc66w"/>
+    </profileApplication>
+  </uml:Package>
+  <graphics:Shape xmi:id="_oKoMcM-hEeOZud_tbAga3w" x="180" y="55" width="613" height="54" base_Element="_oIZ-4s-hEeOZud_tbAga3w"/>
+  <graphics:Shape xmi:id="_oKozgM-hEeOZud_tbAga3w" x="180" y="108" width="613" height="415" base_Element="_oIal8M-hEeOZud_tbAga3w"/>
+  <arctis:esm xmi:id="_oKpakM-hEeOZud_tbAga3w" base_StateMachine="_oKozgc-hEeOZud_tbAga3w"/>
+</xmi:XMI>
