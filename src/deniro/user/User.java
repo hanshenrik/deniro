@@ -37,13 +37,13 @@ public class User extends Block {
 		}
 		
 		Order order = new Order(alias_userID, address, taxiType, time);
-		System.out.println("User: Request from user " + order.getUserID() +
+		System.out.println("User: Request from " + order.getUserID() +
 				" created at user side! " + order.getOrderInfo());
 		return order;
 	}
 
 	public String cancelRequest() {
-		System.out.println("User: Request from user " + alias_userID + " cancelled at user side!");
+		System.out.println("User: Request from " + alias_userID + " cancelled at user side!");
 		return alias_userID;
 	}
 	
@@ -61,5 +61,20 @@ public class User extends Block {
 
 	public String subscribeTo() {
 		return "taxiCentral";
+	}
+
+	public String createTopic(Object requestType) {
+		System.out.println("User: creating topic...");
+		if (requestType instanceof Order) {
+			System.out.println("\t topic: userRequest");
+			return "userRequest";
+		}
+		
+		else if (requestType instanceof String) {
+			System.out.println("\t topic: userCancel");
+			return "userCancel";
+		}
+		
+		return null;
 	}
 }
