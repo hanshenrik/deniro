@@ -29,4 +29,8 @@ public class Taxi extends Block {
 	public String extractMessage(Order order) {
 		return order.getOrderInfo();
 	}
+
+	public void publishOK() {
+		System.out.println("Published");
+	}
 }
