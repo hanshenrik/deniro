@@ -46,8 +46,8 @@
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_HU8nws8QEeONUtTfPeAIMw" name="java.lang.String"/>
     <packagedElement xmi:type="uml:TimeEvent" xmi:id="_UbUoIM8QEeONUtTfPeAIMw" name="t0">
-      <when xmi:id="_U5JMkM8QEeONUtTfPeAIMw" name="t0">
-        <expr xmi:type="uml:LiteralString" xmi:id="_U5JMkc8QEeONUtTfPeAIMw" name="t0" value="100"/>
+      <when xmi:id="_beC_QNEZEeOCb-ghqoF7BQ" name="t0">
+        <expr xmi:type="uml:LiteralString" xmi:id="_beC_QdEZEeOCb-ghqoF7BQ" name="t0" value="0"/>
       </when>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_qERmwM-CEeOFaL2LUqCzSA" name="no.ntnu.item.ttm4115.termassignment">

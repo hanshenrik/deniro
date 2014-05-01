@@ -8,7 +8,16 @@ public class Taxi extends Block {
 	public java.lang.String alias_taxiID;
 	public java.lang.String type;
 	public boolean availability;
+	public MapPosition position;
 	
+//	public MapPosition getPosition() {
+//		return position;
+//	}
+//
+//	public void setPosition(MapPosition position) {
+//		this.position = position;
+//	}
+
 	public static String getAlias(String alias) {
 		return alias;
 	}
