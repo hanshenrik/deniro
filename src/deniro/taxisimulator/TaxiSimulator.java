@@ -1,5 +1,7 @@
 package deniro.taxisimulator;
 
+import com.bitreactive.library.android.maps.model.MapUpdate;
+
 import deniro.taxi.MapPosition;
 import no.ntnu.item.arctis.runtime.Block;
 import no.ntnu.item.ttm4115.simulation.routeplanner.Journey;
@@ -7,14 +9,12 @@ import no.ntnu.item.ttm4115.simulation.routeplanner.Route;
 
 public class TaxiSimulator extends Block {
 	
-	private String alias_ID;
 	private String curPos = "Elgesetergate 1";
-	public java.lang.String destination;
 	public java.lang.String taxiAlias;
+	public java.lang.String destination = "Sunnlandsvegen 64";
 	
 	public Journey makeJourney(){
-		Journey j = new Journey(taxiAlias, "Elgesetergate 1","Holtermanns veg 45");
-		System.out.println(j.toString());
+		Journey j = new Journey(taxiAlias, curPos,destination);
 		return j;
 	}
 
@@ -25,4 +25,8 @@ public class TaxiSimulator extends Block {
 		return r;
 	}
 
+	public MapUpdate addPolyline(MapUpdate m){
+		
+		return m;
+	}
 }
