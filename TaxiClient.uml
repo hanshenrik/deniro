@@ -111,6 +111,7 @@
         <appliedProfile href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_rE77YK4iEduZSuTiwKs5Lw"/>
       </profileApplication>
     </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_gMUuYNHsEeOfCcX9wNbVMQ" name="deniro.user.Order"/>
     <profileApplication xmi:id="_USBhAM72EeONUtTfPeAIMw">
       <eAnnotations xmi:id="_USD9QM72EeONUtTfPeAIMw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
