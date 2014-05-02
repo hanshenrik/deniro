@@ -5,8 +5,8 @@ import no.ntnu.item.arctis.runtime.Block;
 
 public class TaxiCentral extends Block {
 
-	public java.lang.String userTopics = "userRequest, userCancel";
-	public java.lang.String taxiTopics = "onduty, offduty, available, unavaliable, confirm";
+	public java.lang.String userTopics = "userRequest,userCancel";
+	public java.lang.String taxiTopics = "onduty,offduty,available,unavaliable,confirm";
 	public java.lang.String subscribeTo = userTopics + ", " + taxiTopics;
 	
 
@@ -16,15 +16,10 @@ public class TaxiCentral extends Block {
 		return subscribeTo;
 	}
 
-	public String createTopic(Object requestType) {
-		if (requestType instanceof Order) {
-			return "taxiRequest";
-		}
-		
-		else if (requestType instanceof String) {
-			return "cancelTaxiRequest";
-		}
-		
-		return null;
+
+	public Object receivedObject(Object o) {
+		Order order = (Order)o;
+		System.out.println("TaxiCentral: received this order "+order.getOrderInfo());
+		return o;
 	}
 }

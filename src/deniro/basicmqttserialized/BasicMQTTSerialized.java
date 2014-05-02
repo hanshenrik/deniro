@@ -24,8 +24,9 @@ public class BasicMQTTSerialized extends Block {
 		return o;
 	}
 
-	public void printSomething(String s) {
+	public String printSomething(String s) {
 		System.out.println("### "+s);
+		return s;
 	}
 
 }

@@ -3,15 +3,22 @@ package deniro.user;
 public class Order {
 
 	private String userID;
-	private String address;
+	private String taxiID;
+	private String toAddress;
+	private String fromAddress;
 	private String taxiType;
 	private String time;
+	private String message;
+	private String placeInQueue;
+	private boolean isCancelled;
+	private boolean isConfirmed;
 	
 	public Order(String userID, String address, String taxiType, String time) {
 		setUserID(userID);
 		setAddress(address);
 		setTaxiType(taxiType);
 		setTime(time);
+		setCancelled(false);
 	}
 	
 	public void setUserID(String userID) {
@@ -23,11 +30,11 @@ public class Order {
 	}
 
 	public String getAddress() {
-		return address;
+		return toAddress;
 	}
 
 	public void setAddress(String address) {
-		this.address = address;
+		this.toAddress = address;
 	}
 	
 	private void setTaxiType(String taxiType) {
@@ -47,7 +54,48 @@ public class Order {
 	}
 	
 	public String getOrderInfo() {
-		return "Order info: " + getUserID() + ", " + getAddress() + ", " + getTaxiType() + ", " + getTime();
+		return "Order info: " + getUserID() + ", " + getAddress() + ", " +
+				getTaxiType() + ", " + getTime() +", "+isCancelled()+", "+isConfirmed();
+	}
+
+	public boolean isCancelled() {
+		return isCancelled;
+	}
+
+	public void setCancelled(boolean cancelled) {
+		this.isCancelled = cancelled;
+	}
+
+	public boolean isConfirmed() {
+		return isConfirmed;
+	}
+
+	public void confirm(String taxiID) {
+		this.taxiID = taxiID;
+	}
+
+	public String getTaxiID() {
+		return taxiID;
+	}
+
+	public void setTaxiID(String taxiID) {
+		this.taxiID = taxiID;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public String getPlaceInQueue() {
+		return placeInQueue;
+	}
+
+	public void setPlaceInQueue(String placeInQueue) {
+		this.placeInQueue = placeInQueue;
 	}
 	
 }

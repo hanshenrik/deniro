@@ -13,6 +13,8 @@ public class Taxi extends Block {
 	public java.lang.String type;
 	public boolean availability = true;
 	public MapPosition position;
+	public deniro.user.Order order;
+	public java.lang.String subscribeTo = "";
 	public deniro.user.Order o;
 	
 	public MapPosition getPosition() {
@@ -49,5 +51,13 @@ public class Taxi extends Block {
 			ma.hue(Marker.HUE_ROSE);
 		mu.addMarker(Marker.createMarker(alias_taxiID).position(new Position (6.3422984E7,1.0394329E7)));
 		return mu;
+	}
+	
+	public Order castToOrder(Object o) {
+		return (Order)o;
+	}
+	
+	public String createSubscribeTopics() {
+		return subscribeTo;
 	}
 }

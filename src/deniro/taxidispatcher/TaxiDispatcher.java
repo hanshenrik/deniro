@@ -1,7 +1,7 @@
 package deniro.taxidispatcher;
 
-import java.util.HashMap;
 import java.util.Stack;
+import java.util.ArrayList;
 
 import deniro.user.Order;
 import no.ntnu.item.arctis.runtime.Block;
@@ -11,12 +11,16 @@ public class TaxiDispatcher extends Block {
 
 	public java.util.Stack<java.lang.String> registeredTaxis;
 	public java.util.Stack<java.lang.String> availableTaxis;
-	public java.util.HashMap<String, String> tours; // userID, taxiID
+	public java.util.ArrayList<Order> pendingOrders;
+	public java.util.ArrayList<Order> confirmedOrders;
+	public java.lang.String publishTopic;
+	public deniro.user.Order tempOrder;
 
 	public TaxiDispatcher() {
 		this.registeredTaxis = new Stack<String>();
 		this.availableTaxis = new Stack<String>();
-		this.tours = new HashMap<String, String>();
+		this.pendingOrders = new ArrayList<Order>();
+		this.confirmedOrders = new ArrayList<Order>();
 	}
 	
 	public void taxiOnDuty(String taxiID) {
@@ -39,20 +43,32 @@ public class TaxiDispatcher extends Block {
 		availableTaxis.remove(taxiID);
 	}
 	
-	public Order requestHandler(Order order) {
-		System.out.println("requesthandler "+order.getOrderInfo());
-		// add distance logic
-		tours.put(order.getUserID(), availableTaxis.pop());
-		return order;
+	public String taxiConfirmed(Order order) {
+		System.out.println("TaxiDispatcher: confirming "+order.getOrderInfo());
+		pendingOrders.remove(order);
+		confirmedOrders.add(order);
+		
+		return "orderConfirmed";
 	}
 	
-	public String requestCancelled(String userID) {
-		System.out.println("requestcancelled "+userID);
-		availableTaxis.add(tours.get(userID)); // could verify that the order exists, so taxis don't get added several times..
-		return tours.remove(userID);
+	public String requestHandler(Order order) {
+		System.out.println("TaxiDispatcher: creating "+order.getOrderInfo());
+		// add distance logic
+			
+		pendingOrders.add(order);
+		return "orderCreated";
+	}
+	
+	public String requestCancelled(Order order) {
+		System.out.println("TaxiDispatcher: cancelling "+order.getOrderInfo());
+		if (order.getTaxiID() != null) { // no taxi has confirmed yet
+			availableTaxis.add(order.getTaxiID());
+			confirmedOrders.remove(order);
+		} else {
+			pendingOrders.remove(order);
+		}
+		
+		return "orderCancelled";
 	}
 
-	public void printSomething() {
-		System.out.println("TaxiDispatcher started!");
-	}
 }

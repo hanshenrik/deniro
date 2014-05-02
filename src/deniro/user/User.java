@@ -9,8 +9,10 @@ import deniro.user.Order;
 public class User extends Block {
 
 	public java.lang.String alias_userID;
+	public deniro.user.Order order;
+	public java.lang.String subscribeTo = "orderCreated,orderConfirmed,orderCancelled,movedUpInQueue";
 	
-	public Order createRequest(String request) {
+	public String createRequest(String request) {
 		String[] params = request.split(";");
 		
 		String address = params[0];
@@ -36,15 +38,16 @@ public class User extends Block {
 			time = params[2];
 		}
 		
-		Order order = new Order(alias_userID, address, taxiType, time);
+		order = new Order(alias_userID, address, taxiType, time);
 		System.out.println("User: Request from " + order.getUserID() +
 				" created at user side! " + order.getOrderInfo());
-		return order;
+		return "userRequest";
 	}
 
 	public String cancelRequest() {
 		System.out.println("User: Request from " + alias_userID + " cancelled at user side!");
-		return alias_userID;
+		order.setCancelled(true);
+		return "userCancel";
 	}
 	
 	public static String getAlias(String alias) {
@@ -59,22 +62,20 @@ public class User extends Block {
 		return order.getOrderInfo();
 	}
 
-	public String subscribeTo() {
-		return "taxiCentral";
+	public String createSubscribeTopics() {
+		return subscribeTo;
 	}
 
-	public String createTopic(Object requestType) {
-		System.out.println("User: creating topic...");
-		if (requestType instanceof Order) {
-			System.out.println("\t topic: userRequest");
-			return "userRequest";
-		}
-		
-		else if (requestType instanceof String) {
-			System.out.println("\t topic: userCancel");
-			return "userCancel";
-		}
-		
-		return null;
+	public Order castToOrder(Object o) {
+		return (Order)o;
+	}
+
+	public String printThis(String s) {
+		System.out.println("User: topic is "+s);
+		return s;
+	}
+	
+	public void publishOK() {
+		System.out.println("Published");
 	}
 }

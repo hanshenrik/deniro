@@ -136,4 +136,5 @@
   <arctis:event xmi:id="_IoxD0s-DEeOFaL2LUqCzSA" base_Transition="_IoxD0c-DEeOFaL2LUqCzSA" triggers="_nk4S8M8QEeONUtTfPeAIMw"/>
   <arctis:event xmi:id="_Ioxq4c-DEeOFaL2LUqCzSA" base_Transition="_Ioxq4M-DEeOFaL2LUqCzSA" effects="_ApaHYM8REeONUtTfPeAIMw"/>
   <arctis:event xmi:id="_IoyR8c-DEeOFaL2LUqCzSA" base_Transition="_IoyR8M-DEeOFaL2LUqCzSA" effects="_C_Vc8M8REeONUtTfPeAIMw"/>
+  <graphics:Shape xmi:id="_hxQUwNIAEeOwq_tH6ejoLA" aux1="0 39 -342 -72  342 39 0 -72 " base_Element="_uTHlwM-CEeOFaL2LUqCzSA"/>
 </xmi:XMI>
