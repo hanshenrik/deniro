@@ -9,13 +9,14 @@ public class Order {
 	private String taxiType;
 	private String time;
 	private String message;
-	private String placeInQueue;
+	private int placeInQueue;
 	private boolean isCancelled;
 	private boolean isConfirmed;
 	
-	public Order(String userID, String address, String taxiType, String time) {
+	public Order(String userID, String fromAddress, String toAddress, String taxiType, String time) {
 		setUserID(userID);
-		setAddress(address);
+		setToAddress(toAddress);
+		setFromAddress(fromAddress);
 		setTaxiType(taxiType);
 		setTime(time);
 		setCancelled(false);
@@ -33,7 +34,7 @@ public class Order {
 		return toAddress;
 	}
 
-	public void setAddress(String address) {
+	public void setToAddress(String address) {
 		this.toAddress = address;
 	}
 	
@@ -54,8 +55,9 @@ public class Order {
 	}
 	
 	public String getOrderInfo() {
-		return "Order info: " + getUserID() + ", " + getAddress() + ", " +
-				getTaxiType() + ", " + getTime() +", "+isCancelled()+", "+isConfirmed();
+		return "Order info: " + getUserID() + ", "+","+getTaxiID() +", "+ getAddress() + ", " +
+				getTaxiType() + ", " + getTime() +", "+isCancelled()+", "+isConfirmed()+
+				","+getMessage()+", "+getPlaceInQueue();
 	}
 
 	public boolean isCancelled() {
@@ -90,12 +92,20 @@ public class Order {
 		this.message = message;
 	}
 
-	public String getPlaceInQueue() {
+	public int getPlaceInQueue() {
 		return placeInQueue;
 	}
 
-	public void setPlaceInQueue(String placeInQueue) {
+	public void setPlaceInQueue(int placeInQueue) {
 		this.placeInQueue = placeInQueue;
+	}
+
+	public String getFromAddress() {
+		return fromAddress;
+	}
+
+	public void setFromAddress(String fromAddress) {
+		this.fromAddress = fromAddress;
 	}
 	
 }

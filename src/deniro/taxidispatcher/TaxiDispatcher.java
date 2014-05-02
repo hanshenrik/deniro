@@ -1,7 +1,6 @@
 package deniro.taxidispatcher;
 
-import java.util.Stack;
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 import deniro.user.Order;
 import no.ntnu.item.arctis.runtime.Block;
@@ -9,18 +8,16 @@ import no.ntnu.item.arctis.runtime.Block;
 
 public class TaxiDispatcher extends Block {
 
-	public java.util.Stack<java.lang.String> registeredTaxis;
-	public java.util.Stack<java.lang.String> availableTaxis;
-	public java.util.ArrayList<Order> pendingOrders;
-	public java.util.ArrayList<Order> confirmedOrders;
+	public java.util.LinkedList<java.lang.String> registeredTaxis; // has to contain taxiID and taxi position, and be indexed!
+	public java.util.LinkedList<java.lang.String> availableTaxis;
+	public java.util.LinkedList<Order> pendingOrders;
 	public java.lang.String publishTopic;
 	public deniro.user.Order tempOrder;
 
 	public TaxiDispatcher() {
-		this.registeredTaxis = new Stack<String>();
-		this.availableTaxis = new Stack<String>();
-		this.pendingOrders = new ArrayList<Order>();
-		this.confirmedOrders = new ArrayList<Order>();
+		this.registeredTaxis = new LinkedList<String>();
+		this.availableTaxis = new LinkedList<String>();
+		this.pendingOrders = new LinkedList<Order>();
 	}
 	
 	public void taxiOnDuty(String taxiID) {
@@ -29,7 +26,8 @@ public class TaxiDispatcher extends Block {
 	}
 	
 	public void taxiOffDuty(String taxiID) {
-		System.out.println("off duty "+taxiID);
+		System.out.println("off duty (and unavailable) "+taxiID);
+		availableTaxis.remove(taxiID);
 		registeredTaxis.remove(taxiID);
 	}
 	
@@ -38,37 +36,80 @@ public class TaxiDispatcher extends Block {
 		availableTaxis.add(taxiID);
 	}
 	
-	public void taxiUnavailable(String taxiID) {
-		System.out.println("unavailable "+taxiID);
-		availableTaxis.remove(taxiID);
-	}
-	
-	public String taxiConfirmed(Order order) {
-		System.out.println("TaxiDispatcher: confirming "+order.getOrderInfo());
-		pendingOrders.remove(order);
-		confirmedOrders.add(order);
+	public String taxiUnavailable(Order order) {
+		System.out.println("unavailable "+order.getTaxiID());
+		availableTaxis.remove(order.getTaxiID());
 		
-		return "orderConfirmed";
+		if (order.getUserID() == null) {
+			return "noReject";
+		}
+		
+		if (!availableTaxis.isEmpty()) {
+			return "assignTaxi";
+		} else {
+			order.setMessage("No taxis available at the moment, see queue number...");
+			return "noTaxiAvailable";
+		}
 	}
 	
-	public String requestHandler(Order order) {
+	public Order taxiConfirmed(Order order) {
+		System.out.println("TaxiDispatcher: confirming "+order.getOrderInfo());
+		pendingOrders.remove(order.getUserID());
+		order.setMessage("A taxi is on it's way. Enjoy the ride!");
+		
+		return order;
+	}
+	
+	public boolean requestHandler(Order order) {
 		System.out.println("TaxiDispatcher: creating "+order.getOrderInfo());
-		// add distance logic
-			
+		
+		for (Order o : pendingOrders) {
+			if (o.getUserID().equals(order.getUserID())) {
+				pendingOrders.remove(o);
+			}
+		}
+		
 		pendingOrders.add(order);
-		return "orderCreated";
+		order.setPlaceInQueue(pendingOrders.indexOf(order.getUserID()));
+		
+		if (!availableTaxis.isEmpty()) {
+			return true;
+		} else {
+			order.setMessage("No taxis available at the moment, see queue number...");
+			return false;
+		}
+	}
+	
+	public Order assignTaxi(Order order) {
+		// 	add distance logic
+		order.setTaxiID(availableTaxis.pop());
+		
+		return order;
 	}
 	
 	public String requestCancelled(Order order) {
 		System.out.println("TaxiDispatcher: cancelling "+order.getOrderInfo());
-		if (order.getTaxiID() != null) { // no taxi has confirmed yet
-			availableTaxis.add(order.getTaxiID());
-			confirmedOrders.remove(order);
-		} else {
-			pendingOrders.remove(order);
+		// not possible after taxi has confirmed!
+		
+		availableTaxis.add(order.getTaxiID());
+		
+		for (Order o : pendingOrders) {
+			if (o.getUserID().equals(order.getUserID())) {
+				pendingOrders.remove(o);
+			}
 		}
 		
-		return "orderCancelled";
+		order.setMessage("Order cancelled!");
+		
+		return order.getUserID();
+	}
+
+	public String getUserID(Order order) {
+		return order.getUserID();
+	}
+	
+	public String getTaxiID(Order order) {
+		return order.getTaxiID();
 	}
 
 }

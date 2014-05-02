@@ -15,7 +15,7 @@ public class User extends Block {
 	public String createRequest(String request) {
 		String[] params = request.split(";");
 		
-		String address = params[0];
+		String toAddress = params[0];
 		
 		// default values for type and time
 		String taxiType = "regular";
@@ -38,7 +38,7 @@ public class User extends Block {
 			time = params[2];
 		}
 		
-		order = new Order(alias_userID, address, taxiType, time);
+		order = new Order(alias_userID, "Elgesetergate 1", toAddress, taxiType, time);
 		System.out.println("User: Request from " + order.getUserID() +
 				" created at user side! " + order.getOrderInfo());
 		return "userRequest";
@@ -62,8 +62,8 @@ public class User extends Block {
 		return order.getOrderInfo();
 	}
 
-	public String createSubscribeTopics() {
-		return subscribeTo;
+	public String createSubscribeTopics(String userID) {
+		return subscribeTo+","+userID;
 	}
 
 	public Order castToOrder(Object o) {

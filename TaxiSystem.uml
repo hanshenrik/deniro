@@ -28,7 +28,7 @@
             <value xmi:type="uml:LiteralInteger" xmi:id="_UJ_BANBDEeOBq5TeEPpHHg" name="delay" type="_uy9W0LpiEeOyef4cR_3goA" value="1"/>
           </argument>
           <argument xmi:type="uml:ValuePin" xmi:id="_GcINUNIZEeOr-J9WBaomdA" name="instances" type="_uy9W0LpiEeOyef4cR_3goA">
-            <value xmi:type="uml:LiteralInteger" xmi:id="_GcJbcNIZEeOr-J9WBaomdA" name="instances" type="_uy9W0LpiEeOyef4cR_3goA" value="1"/>
+            <value xmi:type="uml:LiteralInteger" xmi:id="_lVw4UNI3EeOn54dzgFCK-w" name="instances" type="_uy9W0LpiEeOyef4cR_3goA" value="2"/>
           </argument>
           <result xmi:id="_u4bssLpiEeOyef4cR_3goA" name="create" inPartition="_bsg4YLnIEeOcSpJPh7SljQ" outgoing="_p3NqALpsEeOyef4cR_3goA" type="_uy5FYLpiEeOyef4cR_3goA"/>
           <result xmi:id="_u4f-ILpiEeOyef4cR_3goA" name="end" inPartition="_bsg4YLnIEeOcSpJPh7SljQ" outgoing="_6UJiELpiEeOyef4cR_3goA"/>
@@ -55,7 +55,7 @@
             <value xmi:type="uml:LiteralInteger" xmi:id="_U_Y_ANBDEeOBq5TeEPpHHg" name="delay" type="_uy9W0LpiEeOyef4cR_3goA" value="1"/>
           </argument>
           <argument xmi:type="uml:ValuePin" xmi:id="_HL7SkNIZEeOr-J9WBaomdA" name="instances" type="_uy9W0LpiEeOyef4cR_3goA">
-            <value xmi:type="uml:LiteralInteger" xmi:id="_HL8gsNIZEeOr-J9WBaomdA" name="instances" type="_uy9W0LpiEeOyef4cR_3goA" value="1"/>
+            <value xmi:type="uml:LiteralInteger" xmi:id="_l9dKcNI3EeOn54dzgFCK-w" name="instances" type="_uy9W0LpiEeOyef4cR_3goA" value="2"/>
           </argument>
           <result xmi:id="_te3XIM-qEeOFaL2LUqCzSA" name="create" inPartition="_bsg4YLnIEeOcSpJPh7SljQ" outgoing="_RVCwQM-rEeOFaL2LUqCzSA" type="_uy5FYLpiEeOyef4cR_3goA"/>
           <result xmi:id="_te4lQM-qEeOFaL2LUqCzSA" name="end" inPartition="_bsg4YLnIEeOcSpJPh7SljQ" outgoing="_RFl_AM-rEeOFaL2LUqCzSA"/>
