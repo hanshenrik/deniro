@@ -11,17 +11,18 @@ public class Taxi extends Block {
 
 	public java.lang.String alias_taxiID;
 	public java.lang.String type;
-	public boolean availability = true;
-	public MapPosition position;
+	public boolean availability;
+	public boolean duty;
+	public Position position;
 	public deniro.user.Order order;
 	public java.lang.String subscribeTo = "";
 	public deniro.user.Order o;
 	
-	public MapPosition getPosition() {
+	public Position getPosition() {
 		return position;
 	}
 
-	public void setPosition(MapPosition position) {
+	public void setPosition(Position position) {
 		this.position = position;
 	}
 
@@ -34,6 +35,7 @@ public class Taxi extends Block {
 	}
 	
 	public String extractMessage(Order order) {
+		o.setTaxiID(alias_taxiID);
 		return order.getOrderInfo();
 	}
 
@@ -41,15 +43,42 @@ public class Taxi extends Block {
 		System.out.println("Published");
 	}
 
-	public MapUpdate startTaxi() {
+	public void startTaxi() {
+		position = new Position (6.3422984E7,1.0394329E7);
+	}
+	
+	public MapUpdate setOffDuty(){
+		duty = false;
+		availability=false;
 		MapUpdate mu = new MapUpdate();
-		Marker ma = Marker.createMarker(alias_taxiID).position(new Position (6.3422984E7,1.0394329E7));
-		if (availability){
-			ma.hue(Marker.HUE_GREEN);
+		Marker ma = Marker.createMarker(alias_taxiID);
+		ma.remove();
+		mu.addMarker(ma);
+		return mu;
+	}
+		
+	public MapUpdate setOnDuty(){
+		duty = true;
+		return setAFalse();
+	}
+	
+	public MapUpdate setATrue(){
+		MapUpdate mu = new MapUpdate();
+		if(duty){
+		availability = true;
+		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_GREEN);
+		mu.addMarker(ma);
 		}
-		else
-			ma.hue(Marker.HUE_ROSE);
-		mu.addMarker(Marker.createMarker(alias_taxiID).position(new Position (6.3422984E7,1.0394329E7)));
+		return mu;
+	}
+	
+	public MapUpdate setAFalse(){
+		MapUpdate mu = new MapUpdate();
+		if(duty){
+		availability = false;
+		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_RED);
+		mu.addMarker(ma);
+		}
 		return mu;
 	}
 	
