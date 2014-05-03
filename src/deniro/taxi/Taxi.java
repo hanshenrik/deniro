@@ -49,7 +49,8 @@ public class Taxi extends Block {
 	}
 	
 	public String extractMessage(Order order) {
-		o.setTaxiID(alias_taxiID);
+		System.out.println("Taxi: extracting message: "+order.getOrderInfo());
+		// o.setTaxiID(alias_taxiID);
 		return order.getOrderInfo();
 	}
 
@@ -120,11 +121,16 @@ public class Taxi extends Block {
 	}
 	
 	public Order castToOrder(Object o) {
+		System.out.println("Taxi: received message, casting to Order...");
 		return (Order)o;
 	}
 
 	public Order makeDummyOrder() {
 		Order o = new Order(alias_taxiID,"Sunnlandsvegen 64");
 		return o;
+	}
+
+	public String clearString() {
+		return "";
 	}
 }
