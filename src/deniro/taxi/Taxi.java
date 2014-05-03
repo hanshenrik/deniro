@@ -13,10 +13,10 @@ public class Taxi extends Block {
 	public java.lang.String type;
 	public boolean availability;
 	public boolean duty;
-	public Position position;
 	public deniro.user.Order order;
 	public java.lang.String subscribeTo = "";
 	public deniro.user.Order o;
+	public com.bitreactive.library.android.maps.model.Position position;
 	
 	public Position getPosition() {
 		return position;
@@ -43,8 +43,8 @@ public class Taxi extends Block {
 		System.out.println("Published");
 	}
 
-	public void startTaxi() {
-		position = new Position (6.3422984E7,1.0394329E7);
+	public Position startTaxi() {
+		return position = new Position (6.3422984E7,1.0394329E7);
 	}
 	
 	public MapUpdate setOffDuty(){
@@ -66,8 +66,10 @@ public class Taxi extends Block {
 		MapUpdate mu = new MapUpdate();
 		if(duty){
 		availability = true;
-		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_GREEN);
+		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_GREEN).title(alias_taxiID).description("Available").showWindow(true);
 		mu.addMarker(ma);
+		mu.setCenter(position);
+		mu.setZoom(15);
 		}
 		return mu;
 	}
@@ -76,8 +78,10 @@ public class Taxi extends Block {
 		MapUpdate mu = new MapUpdate();
 		if(duty){
 		availability = false;
-		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_RED);
+		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_RED).title(alias_taxiID).description("Unavailable").showWindow(true);
 		mu.addMarker(ma);
+		mu.setCenter(position);
+		mu.setZoom(15);
 		}
 		return mu;
 	}
@@ -88,5 +92,10 @@ public class Taxi extends Block {
 	
 	public String createSubscribeTopics() {
 		return subscribeTo;
+	}
+
+	public Order makeDummyOrder() {
+		Order o = new Order(alias_taxiID,"Sunnlandsvegen 64");
+		return o;
 	}
 }

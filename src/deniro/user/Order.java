@@ -1,5 +1,7 @@
 package deniro.user;
 
+import com.bitreactive.library.android.maps.model.Position;
+
 public class Order {
 
 	private String userID;
@@ -20,6 +22,16 @@ public class Order {
 		setTaxiType(taxiType);
 		setTime(time);
 		setCancelled(false);
+	}
+	public Order(String taxiID,String fromAddress, String toAddress){
+		setTaxiID(taxiID);
+		setFromAddress(fromAddress);
+		setToAddress(toAddress);
+	}
+	public Order(String taxiID, String toAddress){
+		setTaxiID(taxiID);
+		setToAddress(toAddress);
+		fromAddress = null;
 	}
 	
 	public void setUserID(String userID) {
