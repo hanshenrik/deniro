@@ -76,6 +76,7 @@ public class TaxiDispatcher extends Block {
 		
 		if (!availableTaxis.isEmpty()) {
 			System.out.println("TaxiDispatcher: taxis are available!");
+			order.setMessage("Taxis are available. Hang on a minute, let us contact one...");
 			return "assignTaxi";
 		} else {
 			order.setMessage("No taxis available at the moment, see queue number...");
