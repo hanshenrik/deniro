@@ -103,6 +103,7 @@ public class Taxi extends Block {
 					title(alias_taxiID).description(status).showWindow(true);
 		}
 		if (status.equals("offduty")) {
+			System.out.println("Taxi: setting taxi off duty!");
 			marker = Marker.createMarker(alias_taxiID);
 			marker.remove();
 			mapUpdate.addMarker(marker);

@@ -422,8 +422,8 @@
       <appliedProfile href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_UEANMUVlEduH9aQE_pc66w"/>
     </profileApplication>
   </uml:Package>
-  <graphics:Shape xmi:id="_EzQosLnIEeOcSpJPh7SljQ" x="54" y="36" width="1297" height="55" base_Element="_EgUekLnIEeOcSpJPh7SljQ"/>
-  <graphics:Shape xmi:id="_EzUTELnIEeOcSpJPh7SljQ" x="54" y="90" width="1297" height="415" base_Element="_EhBpMLnIEeOcSpJPh7SljQ"/>
+  <graphics:Shape xmi:id="_EzQosLnIEeOcSpJPh7SljQ" x="54" y="36" width="1495" height="55" base_Element="_EgUekLnIEeOcSpJPh7SljQ"/>
+  <graphics:Shape xmi:id="_EzUTELnIEeOcSpJPh7SljQ" x="54" y="90" width="1495" height="415" base_Element="_EhBpMLnIEeOcSpJPh7SljQ"/>
   <arctis:esm xmi:id="_Ezc18LnIEeOcSpJPh7SljQ" base_StateMachine="_EzbAwLnIEeOcSpJPh7SljQ"/>
   <graphics:Shape xmi:id="__DpA8LprEeOyef4cR_3goA" x="216" y="18" base_Element="__AOgkLprEeOyef4cR_3goA" orientation="north"/>
   <graphics:Shape xmi:id="_KDL3sLpsEeOyef4cR_3goA" x="288" y="504" base_Element="_KDFKALpsEeOyef4cR_3goA"/>

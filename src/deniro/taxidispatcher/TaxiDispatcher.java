@@ -21,39 +21,41 @@ public class TaxiDispatcher extends Block {
 	}
 	
 	public void taxiOnDuty(String taxiID) {
-		System.out.println("on duty "+taxiID);
+		System.out.println("TaxiDispatcher: "+taxiID+" now on duty");
 		registeredTaxis.add(taxiID);
 	}
 	
 	public void taxiOffDuty(String taxiID) {
-		System.out.println("off duty (and unavailable) "+taxiID);
+		System.out.println("TaxiDispatcher: "+taxiID+" now off duty (and unavailable)");
 		availableTaxis.remove(taxiID);
 		registeredTaxis.remove(taxiID);
 	}
 	
 	public void taxiAvailable(String taxiID) {
-		System.out.println("available  "+taxiID);
+		System.out.println("TaxiDispatcher: "+taxiID+" now available");
 		availableTaxis.add(taxiID);
 	}
 	
 	public String taxiUnavailable(Order order) {
-		System.out.println("unavailable "+order.getTaxiID());
+		System.out.println("TaxiDispatcher: "+order.getTaxiID()+" now unavailable");
 		availableTaxis.remove(order.getTaxiID());
 		
 		if (order.getUserID() == null) {
-			return "noReject";
+			System.out.println("TaxiDispatcher: noReject");
+			return "noReject"; // no need to do anything more: is not handled as case in diagram
 		}
 		
 		if (!availableTaxis.isEmpty()) {
 			return "assignTaxi";
 		} else {
 			order.setMessage("No taxis available at the moment, see queue number...");
+			order.setPlaceInQueue(pendingOrders.indexOf(order.getUserID()));
 			return "noTaxiAvailable";
 		}
 	}
 	
 	public Order taxiConfirmed(Order order) {
-		System.out.println("TaxiDispatcher: confirming "+order.getOrderInfo());
+		System.out.println("TaxiDispatcher: taxi "+order.getTaxiID()+" confirming "+order.getOrderInfo());
 		pendingOrders.remove(order.getUserID());
 		order.setMessage("A taxi is on it's way. Enjoy the ride!");
 		
