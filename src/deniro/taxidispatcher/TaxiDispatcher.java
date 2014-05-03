@@ -50,19 +50,19 @@ public class TaxiDispatcher extends Block {
 		} else {
 			order.setMessage("No taxis available at the moment, see queue number...");
 			order.setPlaceInQueue(pendingOrders.indexOf(order.getUserID()));
-			return "noTaxiAvailable";
+			return "queue";
 		}
 	}
 	
 	public Order taxiConfirmed(Order order) {
 		System.out.println("TaxiDispatcher: taxi "+order.getTaxiID()+" confirming "+order.getOrderInfo());
 		pendingOrders.remove(order.getUserID());
-		order.setMessage("A taxi is on it's way. Enjoy the ride!");
+		order.setMessage("A taxi is on it's way!");
 		
 		return order;
 	}
 	
-	public boolean requestHandler(Order order) {
+	public String requestHandler(Order order) {
 		System.out.println("TaxiDispatcher: creating "+order.getOrderInfo());
 		
 		for (Order o : pendingOrders) {
@@ -75,16 +75,18 @@ public class TaxiDispatcher extends Block {
 		order.setPlaceInQueue(pendingOrders.indexOf(order.getUserID()));
 		
 		if (!availableTaxis.isEmpty()) {
-			return true;
+			System.out.println("TaxiDispatcher: taxis are available!");
+			return "assignTaxi";
 		} else {
 			order.setMessage("No taxis available at the moment, see queue number...");
-			return false;
+			return "queue";
 		}
 	}
 	
 	public Order assignTaxi(Order order) {
 		// 	add distance logic
 		order.setTaxiID(availableTaxis.pop());
+		System.out.println("TaxiDispatcher: assigned "+order.getTaxiID()+" to order "+order.getUserID());
 		
 		return order;
 	}
