@@ -11,12 +11,26 @@ public class Taxi extends Block {
 
 	public java.lang.String alias_taxiID;
 	public java.lang.String type;
-	public boolean availability;
-	public boolean duty;
+	public boolean available;
+	public boolean onDuty;
 	public deniro.user.Order order;
 	public java.lang.String subscribeTo = "";
 	public deniro.user.Order o;
 	public com.bitreactive.library.android.maps.model.Position position;
+	public java.lang.String status;
+	public com.bitreactive.library.android.maps.model.MapUpdate mapUpdate;
+	public String getStatus() {
+		System.out.println("Taxi: getting status");
+		return status;
+	}
+	
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	public String createSubscribeTopics(String taxiID) {
+		return taxiID + "," + subscribeTo;
+	}
 	
 	public Position getPosition() {
 		return position;
@@ -40,58 +54,72 @@ public class Taxi extends Block {
 	}
 
 	public void publishOK() {
-		System.out.println("Published");
+		System.out.println("Taxi publish OK");
+	}
+	public void publishError(String error) {
+		System.out.println("Taxi: Publish error: "+error);
 	}
 
 	public Position startTaxi() {
 		return position = new Position (6.3422984E7,1.0394329E7);
 	}
 	
-	public MapUpdate setOffDuty(){
-		duty = false;
-		availability=false;
-		MapUpdate mu = new MapUpdate();
-		Marker ma = Marker.createMarker(alias_taxiID);
-		ma.remove();
-		mu.addMarker(ma);
-		return mu;
+	public String setOnDuty() {
+		this.onDuty = true;
+		status = "onduty";
+		return status;
 	}
+	
+	public String setOffDuty() {
+		onDuty = false;
+		// available = false;
+		status = "offduty";
+		return status;
+	}
+	
+	public String setAvailable() {
+		if (onDuty) {
+			status = "available";
+			return status;
+		} else {
+			return "error";
+		}
+	}
+	
+	public String setUnavailable() {
+		if (onDuty) {
+			status = "unavailable";
+			return status;
+		} else {
+			return "error";
+		}
+	}
+	
+	public MapUpdate setMapUpdate(String status) {
+		mapUpdate = new MapUpdate();
+		Marker marker = null;
+		if (status.equals("onduty") || status.equals("unavailable")) {
+			marker = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_RED).
+					title(alias_taxiID).description(status).showWindow(true);
+		}
+		if (status.equals("offduty")) {
+			marker = Marker.createMarker(alias_taxiID);
+			marker.remove();
+			mapUpdate.addMarker(marker);
+		}
+		if (status.equals("available")) {
+			marker = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_GREEN).
+					title(alias_taxiID).description("Available").showWindow(true);
+		}
 		
-	public MapUpdate setOnDuty(){
-		duty = true;
-		return setAFalse();
-	}
-	
-	public MapUpdate setATrue(){
-		MapUpdate mu = new MapUpdate();
-		if(duty){
-		availability = true;
-		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_GREEN).title(alias_taxiID).description("Available").showWindow(true);
-		mu.addMarker(ma);
-		mu.setCenter(position);
-		mu.setZoom(15);
-		}
-		return mu;
-	}
-	
-	public MapUpdate setAFalse(){
-		MapUpdate mu = new MapUpdate();
-		if(duty){
-		availability = false;
-		Marker ma = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_RED).title(alias_taxiID).description("Unavailable").showWindow(true);
-		mu.addMarker(ma);
-		mu.setCenter(position);
-		mu.setZoom(15);
-		}
-		return mu;
+		mapUpdate.addMarker(marker);
+		mapUpdate.setCenter(position);
+		mapUpdate.setZoom(15);
+		return mapUpdate;
 	}
 	
 	public Order castToOrder(Object o) {
 		return (Order)o;
-	}
-	
-	public String createSubscribeTopics() {
-		return subscribeTo;
 	}
 
 	public Order makeDummyOrder() {
