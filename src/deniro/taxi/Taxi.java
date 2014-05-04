@@ -15,10 +15,10 @@ public class Taxi extends Block {
 	public boolean onDuty;
 	public deniro.user.Order order;
 	public java.lang.String subscribeTo = "";
-	public deniro.user.Order o;
 	public com.bitreactive.library.android.maps.model.Position position;
 	public java.lang.String status;
 	public com.bitreactive.library.android.maps.model.MapUpdate mapUpdate;
+	public java.lang.String taxiInfoString;
 	public String getStatus() {
 		System.out.println("Taxi: getting status");
 		return status;
@@ -45,7 +45,7 @@ public class Taxi extends Block {
 	}
 	
 	public static String getAlias(Order order) {
-		return order.getUserID();
+		return order.getTaxiID();
 	}
 	
 	public String extractMessage(Order order) {
@@ -61,8 +61,16 @@ public class Taxi extends Block {
 		System.out.println("Taxi: Publish error: "+error);
 	}
 
-	public Position startTaxi() {
-		return position = new Position (6.3422984E7,1.0394329E7);
+	public Position initPosition() {
+		return position = new Position ((63+Math.random())*1000000,(10+Math.random())*1000000);
+	}
+	
+	public void updateTaxiInfoString() {
+		taxiInfoString = alias_taxiID + ";" + position.getLatitude() + ";" + position.getLongitude();
+	}
+	
+	public String getTaxiInfoString() {
+		return taxiInfoString;
 	}
 	
 	public String setOnDuty() {
@@ -94,6 +102,10 @@ public class Taxi extends Block {
 		} else {
 			return "error";
 		}
+	}
+	
+	public String confirm() {
+		return "confirm";
 	}
 	
 	public MapUpdate setMapUpdate(String status) {

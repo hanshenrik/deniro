@@ -2,38 +2,46 @@ package deniro.taxidispatcher;
 
 import java.util.LinkedList;
 
+import com.bitreactive.library.android.maps.model.Position;
+
 import deniro.user.Order;
 import no.ntnu.item.arctis.runtime.Block;
 
 
 public class TaxiDispatcher extends Block {
 
-	public java.util.LinkedList<java.lang.String> registeredTaxis; // has to contain taxiID and taxi position, and be indexed!
-	public java.util.LinkedList<java.lang.String> availableTaxis;
+	public java.util.LinkedList<TaxiQueueItem> registeredTaxis;
+	public java.util.LinkedList<TaxiQueueItem> availableTaxis;
 	public java.util.LinkedList<Order> pendingOrders;
 	public java.lang.String publishTopic;
 	public deniro.user.Order tempOrder;
 
 	public TaxiDispatcher() {
-		this.registeredTaxis = new LinkedList<String>();
-		this.availableTaxis = new LinkedList<String>();
+		this.registeredTaxis = new LinkedList<TaxiQueueItem>();
+		this.availableTaxis = new LinkedList<TaxiQueueItem>();
 		this.pendingOrders = new LinkedList<Order>();
 	}
 	
-	public void taxiOnDuty(String taxiID) {
-		System.out.println("TaxiDispatcher: "+taxiID+" now on duty");
-		registeredTaxis.add(taxiID);
+	public TaxiQueueItem createTaxiQueueItem(String taxiInfo) {
+		String[] info = taxiInfo.split(";");
+		Position pos = new Position(Double.valueOf(info[1]), Double.valueOf(info[2]));
+		return new TaxiQueueItem(info[0], pos);
 	}
 	
-	public void taxiOffDuty(String taxiID) {
-		System.out.println("TaxiDispatcher: "+taxiID+" now off duty (and unavailable)");
-		availableTaxis.remove(taxiID);
-		registeredTaxis.remove(taxiID);
+	public void taxiOnDuty(TaxiQueueItem tqi) {
+		System.out.println("TaxiDispatcher: "+tqi+" now on duty");
+		registeredTaxis.add(tqi);
+	}
+
+	public void taxiOffDuty(TaxiQueueItem tqi) {
+		System.out.println("TaxiDispatcher: "+tqi+" now off duty (and unavailable)");
+		availableTaxis.remove(tqi);
+		registeredTaxis.remove(tqi);
 	}
 	
-	public void taxiAvailable(String taxiID) {
-		System.out.println("TaxiDispatcher: "+taxiID+" now available");
-		availableTaxis.add(taxiID);
+	public void taxiAvailable(TaxiQueueItem tqi) {
+		System.out.println("TaxiDispatcher: "+tqi+" now available");
+		availableTaxis.add(tqi);
 	}
 	
 	public String taxiUnavailable(Order order) {
@@ -56,7 +64,13 @@ public class TaxiDispatcher extends Block {
 	
 	public Order taxiConfirmed(Order order) {
 		System.out.println("TaxiDispatcher: taxi "+order.getTaxiID()+" confirming "+order.getOrderInfo());
-		pendingOrders.remove(order.getUserID());
+		
+		for (Order o : pendingOrders) {
+			if (o.getUserID().equals(order.getUserID())) {
+				pendingOrders.remove(o);
+			}
+		}
+		
 		order.setMessage("A taxi is on it's way!");
 		
 		return order;
@@ -86,7 +100,7 @@ public class TaxiDispatcher extends Block {
 	
 	public Order assignTaxi(Order order) {
 		// 	add distance logic
-		order.setTaxiID(availableTaxis.pop());
+		order.setTaxiID(availableTaxis.pop().getTaxiID());
 		System.out.println("TaxiDispatcher: assigned "+order.getTaxiID()+" to order "+order.getUserID());
 		
 		return order;
@@ -96,7 +110,11 @@ public class TaxiDispatcher extends Block {
 		System.out.println("TaxiDispatcher: cancelling "+order.getOrderInfo());
 		// not possible after taxi has confirmed!
 		
-		availableTaxis.add(order.getTaxiID());
+		for (TaxiQueueItem tqi : availableTaxis) {
+			if (tqi.getTaxiID().equals(order.getTaxiID())) {
+				availableTaxis.add(tqi);
+			}
+		}
 		
 		for (Order o : pendingOrders) {
 			if (o.getUserID().equals(order.getUserID())) {
