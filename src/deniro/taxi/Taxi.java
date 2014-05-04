@@ -19,25 +19,9 @@ public class Taxi extends Block {
 	public java.lang.String status;
 	public com.bitreactive.library.android.maps.model.MapUpdate mapUpdate;
 	public java.lang.String taxiInfoString;
-	public String getStatus() {
-		System.out.println("Taxi: getting status");
-		return status;
-	}
-	
-	public void setStatus(String status) {
-		this.status = status;
-	}
 	
 	public String createSubscribeTopics(String taxiID) {
 		return taxiID + "," + subscribeTo;
-	}
-	
-	public Position getPosition() {
-		return position;
-	}
-
-	public void setPosition(Position position) {
-		this.position = position;
 	}
 
 	public static String getAlias(String alias) {
@@ -119,7 +103,7 @@ public class Taxi extends Block {
 			System.out.println("Taxi: setting taxi off duty!");
 			marker = Marker.createMarker(alias_taxiID);
 			marker.remove();
-			mapUpdate.addMarker(marker);
+			// mapUpdate.addMarker(marker);
 		}
 		if (status.equals("available")) {
 			marker = Marker.createMarker(alias_taxiID).position(position).hue(Marker.HUE_GREEN).
@@ -135,11 +119,6 @@ public class Taxi extends Block {
 	public Order castToOrder(Object o) {
 		System.out.println("Taxi: received message, casting to Order...");
 		return (Order)o;
-	}
-
-	public Order makeDummyOrder() {
-		Order o = new Order(alias_taxiID,"Sunnlandsvegen 64");
-		return o;
 	}
 
 	public String clearString() {
