@@ -39,9 +39,14 @@ public class TaxiDispatcher extends Block {
 		registeredTaxis.remove(tqi);
 	}
 	
-	public void taxiAvailable(TaxiQueueItem tqi) {
+	public Order taxiAvailable(TaxiQueueItem tqi) {
 		System.out.println("TaxiDispatcher: "+tqi+" now available");
 		availableTaxis.add(tqi);
+		
+		if (!pendingOrders.isEmpty()) {
+			return pendingOrders.pop();
+		}
+		return null;
 	}
 	
 	public String taxiUnavailable(Order order) {
@@ -50,7 +55,7 @@ public class TaxiDispatcher extends Block {
 		
 		if (order.getUserID() == null) {
 			System.out.println("TaxiDispatcher: noReject");
-			return "noReject"; // no need to do anything more: is not handled as case in diagram
+			return "noReject"; // no need to do anything more; is not handled as case in diagram
 		}
 		
 		if (!availableTaxis.isEmpty()) {
@@ -90,7 +95,6 @@ public class TaxiDispatcher extends Block {
 		
 		if (!availableTaxis.isEmpty()) {
 			System.out.println("TaxiDispatcher: taxis are available!");
-			order.setMessage("Taxis are available. Hang on a minute, let us contact one...");
 			return "assignTaxi";
 		} else {
 			order.setMessage("No taxis available at the moment, see queue number...");
@@ -101,6 +105,7 @@ public class TaxiDispatcher extends Block {
 	public Order assignTaxi(Order order) {
 		// 	add distance logic
 		order.setTaxiID(availableTaxis.pop().getTaxiID());
+		order.setMessage("Taxis are available. Hang on a minute, let us contact one...");
 		System.out.println("TaxiDispatcher: assigned "+order.getTaxiID()+" to order "+order.getUserID());
 		
 		return order;
