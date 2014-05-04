@@ -5,7 +5,6 @@ import com.bitreactive.library.android.maps.model.Marker;
 import com.bitreactive.library.android.maps.model.Polyline;
 import com.bitreactive.library.android.maps.model.Position;
 
-import deniro.taxi.MapPosition;
 import deniro.user.Order;
 import no.ntnu.item.arctis.runtime.Block;
 import no.ntnu.item.ttm4115.simulation.routeplanner.Journey;
@@ -14,6 +13,7 @@ import no.ntnu.item.ttm4115.simulation.routeplanner.Route;
 public class TaxiSimulator extends Block {
 	
 	public java.lang.String taxiAlias;
+	public Position endPoint;
 	public no.ntnu.item.ttm4115.simulation.routeplanner.Route r;
 	public int routeStepCounter;
 	public int steps;
@@ -41,7 +41,6 @@ public class TaxiSimulator extends Block {
 			float lng = (float) (r.legs.get(0).steps.get(i).endLocation.longitude*1E6);
 			System.out.println("Positions in route Position("+lat+","+lng+")");
 		}
-//		int i = r.legs.get(0).duration.value;
 		return r;
 	}
 
@@ -59,21 +58,20 @@ public class TaxiSimulator extends Block {
 			
 		}
 		if (routeStepCounter+1 == r.legs.get(0).steps.size()){
-			Position endPoint = new Position (lat,lng);
+			endPoint = new Position (lat,lng);
 			p1.setRemove();
-			Marker m1 = Marker.createMarker(taxiAlias).position(endPoint).hue(Marker.HUE_GREEN).description("Arrived destination").title(taxiAlias).showWindow(true);
-			m.addMarker(m1);
+//			Marker m1 = Marker.createMarker(taxiAlias).position(endPoint).hue(Marker.HUE_GREEN).description("Arrived destination").title(taxiAlias).showWindow(true);
+//			m.addMarker(m1);
 			m.addPolyline(p1);
 		}
 		else{
 			m.addPolyline(p1);
 		}
-		System.out.println("Steps: "+steps);
-		System.out.println("StepCounter: "+routeStepCounter);
 		routeStepCounter++;
 		return m;
 	}
 
-	public void updatePos() {
+	public Position updatePos() {
+		return endPoint;
 	}
 }
