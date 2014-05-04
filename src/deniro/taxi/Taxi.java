@@ -46,7 +46,8 @@ public class Taxi extends Block {
 	}
 
 	public Position initPosition() {
-		return position = new Position ((63+Math.random())*1000000,(10+Math.random())*1000000);
+		// return position = new Position ((63+Math.random())*1000000,(10+Math.random())*1000000);
+		return position = new Position (63.422200E6,10.394607E6);
 	}
 	
 	public void updateTaxiInfoString() {
