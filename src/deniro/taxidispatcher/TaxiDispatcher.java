@@ -50,7 +50,7 @@ public class TaxiDispatcher extends Block {
 		
 		if (order.getUserID() == null) {
 			System.out.println("TaxiDispatcher: noReject");
-			return "noReject"; // no need to do anything more: is not handled as case in diagram
+			return "noReject"; // no need to do anything more; is not handled as case in diagram
 		}
 		
 		if (!availableTaxis.isEmpty()) {
