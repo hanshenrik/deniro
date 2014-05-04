@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arctis="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10 pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6 pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw">
   <uml:Package xmi:id="_Ll34oNBIEeOBq5TeEPpHHg" name="deniro">
-    <packagedElement xmi:type="uml:Activity" xmi:id="_Ll5GwNBIEeOBq5TeEPpHHg" name="TaxiDispatcher" classifierBehavior="_Log88NBIEeOBq5TeEPpHHg" group="_Ll678NBIEeOBq5TeEPpHHg" partition="_Ll678NBIEeOBq5TeEPpHHg" node="_El71kNBJEeOBq5TeEPpHHg _GIIoINBJEeOBq5TeEPpHHg _KSOC8NBJEeOBq5TeEPpHHg _QcIAcNBJEeOBq5TeEPpHHg _Z_eIgNBVEeOBq5TeEPpHHg _cySOYNBVEeOBq5TeEPpHHg _bbVQQNBaEeOBq5TeEPpHHg _cPB-ENBaEeOBq5TeEPpHHg _dffgYNBaEeOBq5TeEPpHHg _4ZvHANBfEeOkO7WV4VQH7Q _9zlPkNEaEeOCb-ghqoF7BQ _IpwgUNIKEeOwq_tH6ejoLA _1Sfz4NINEeOwq_tH6ejoLA _4l5eUNINEeOwq_tH6ejoLA _vBRbgNIPEeOwq_tH6ejoLA _usg3ANIQEeOwq_tH6ejoLA _3y07QNIQEeOwq_tH6ejoLA _oD2EcNIREeOwq_tH6ejoLA _oibd4NIREeOwq_tH6ejoLA _wzaKsNITEeOwq_tH6ejoLA _Fr5voNIsEeOn54dzgFCK-w _PhAFINIvEeOn54dzgFCK-w _1blmANIvEeOn54dzgFCK-w _HNJjINIwEeOn54dzgFCK-w _O7OpINIwEeOn54dzgFCK-w _v62E0NIwEeOn54dzgFCK-w _2j-8ANIwEeOn54dzgFCK-w _TC3-gNIxEeOn54dzgFCK-w _WBoOoNIxEeOn54dzgFCK-w _nRPFgNJCEeOn54dzgFCK-w _Aa2OQNJDEeOn54dzgFCK-w _ErmcUNJEEeOn54dzgFCK-w _fFzgYNObEeOjndw3iBfygg _-JGR8NOeEeOjndw3iBfygg _-xd5gNOeEeOjndw3iBfygg _g4_vwNOwEeOSuJ566X241A _pAbUcdOxEeOSuJ566X241A _xHkasNOxEeOSuJ566X241A _mTYp8NOyEeOSuJ566X241A _u5SIwNOyEeOSuJ566X241A">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_Ll5GwNBIEeOBq5TeEPpHHg" name="TaxiDispatcher" classifierBehavior="_Log88NBIEeOBq5TeEPpHHg" group="_Ll678NBIEeOBq5TeEPpHHg" partition="_Ll678NBIEeOBq5TeEPpHHg" node="_El71kNBJEeOBq5TeEPpHHg _GIIoINBJEeOBq5TeEPpHHg _KSOC8NBJEeOBq5TeEPpHHg _QcIAcNBJEeOBq5TeEPpHHg _Z_eIgNBVEeOBq5TeEPpHHg _cySOYNBVEeOBq5TeEPpHHg _bbVQQNBaEeOBq5TeEPpHHg _cPB-ENBaEeOBq5TeEPpHHg _dffgYNBaEeOBq5TeEPpHHg _4ZvHANBfEeOkO7WV4VQH7Q _9zlPkNEaEeOCb-ghqoF7BQ _IpwgUNIKEeOwq_tH6ejoLA _1Sfz4NINEeOwq_tH6ejoLA _4l5eUNINEeOwq_tH6ejoLA _vBRbgNIPEeOwq_tH6ejoLA _usg3ANIQEeOwq_tH6ejoLA _3y07QNIQEeOwq_tH6ejoLA _oD2EcNIREeOwq_tH6ejoLA _oibd4NIREeOwq_tH6ejoLA _wzaKsNITEeOwq_tH6ejoLA _Fr5voNIsEeOn54dzgFCK-w _PhAFINIvEeOn54dzgFCK-w _1blmANIvEeOn54dzgFCK-w _HNJjINIwEeOn54dzgFCK-w _O7OpINIwEeOn54dzgFCK-w _v62E0NIwEeOn54dzgFCK-w _2j-8ANIwEeOn54dzgFCK-w _TC3-gNIxEeOn54dzgFCK-w _WBoOoNIxEeOn54dzgFCK-w _nRPFgNJCEeOn54dzgFCK-w _Aa2OQNJDEeOn54dzgFCK-w _ErmcUNJEEeOn54dzgFCK-w _fFzgYNObEeOjndw3iBfygg _-JGR8NOeEeOjndw3iBfygg _-xd5gNOeEeOjndw3iBfygg _g4_vwNOwEeOSuJ566X241A _pAbUcdOxEeOSuJ566X241A _xHkasNOxEeOSuJ566X241A _mTYp8NOyEeOSuJ566X241A _u5SIwNOyEeOSuJ566X241A _a4XJYNO4EeOSuJ566X241A _gakNsNO4EeOSuJ566X241A _2ZoGANO4EeOSuJ566X241A _TgWkkNO5EeOSuJ566X241A _dkdGwNO5EeOSuJ566X241A _cxpUUNO6EeOSuJ566X241A _fyDxUNO6EeOSuJ566X241A _iQKygNO6EeOSuJ566X241A _x9BF4NO6EeOSuJ566X241A _KqW3cNO9EeOSuJ566X241A _RmuXMNO-EeOSuJ566X241A _CrX8wNO_EeOSuJ566X241A _FKY84NO_EeOSuJ566X241A _sM358NO_EeOSuJ566X241A">
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Log88NBIEeOBq5TeEPpHHg" name="TaxiDispatcher">
         <region xmi:id="_Log88tBIEeOBq5TeEPpHHg" name="&lt;region>">
           <transition xmi:id="_DtmOsdISEeOwq_tH6ejoLA" name="init / " source="_DtlnoNISEeOwq_tH6ejoLA" target="_DtmOsNISEeOwq_tH6ejoLA"/>
@@ -31,6 +31,13 @@
       <ownedOperation xmi:id="_O7P3QNIwEeOn54dzgFCK-w" name="getUserID"/>
       <ownedOperation xmi:id="_RBwbUNIxEeOn54dzgFCK-w" name="getTaxiID"/>
       <ownedOperation xmi:id="_eTSeUNObEeOjndw3iBfygg" name="createTaxiQueueItem"/>
+      <ownedOperation xmi:id="_TCcWANO4EeOSuJ566X241A" name="checkSize"/>
+      <ownedOperation xmi:id="_Z34j0NO4EeOSuJ566X241A" name="numberOfAvailableTaxis"/>
+      <ownedOperation xmi:id="_9yxBUNO5EeOSuJ566X241A" name="assignSpecificTaxi"/>
+      <ownedOperation xmi:id="_IGsycNO-EeOSuJ566X241A" name="printThis"/>
+      <ownedOperation xmi:id="_4BcwsNO-EeOSuJ566X241A" name="printOrder"/>
+      <ownedOperation xmi:id="_A0fToNO_EeOSuJ566X241A" name="printList"/>
+      <ownedOperation xmi:id="_p-60oNO_EeOSuJ566X241A" name="getAvailableTaxis"/>
       <ownedParameter xmi:id="_EmCjQNBJEeOBq5TeEPpHHg" name="init"/>
       <ownedParameter xmi:id="_GINgoNBJEeOBq5TeEPpHHg" name="error" direction="out"/>
       <ownedParameter xmi:id="_KSTigNBJEeOBq5TeEPpHHg" name="messageTopic" type="_a_FB0NBJEeOBq5TeEPpHHg" isStream="true"/>
@@ -41,7 +48,7 @@
       <ownedParameter xmi:id="_g5SDoNOwEeOSuJ566X241A" name="taxiTopic" type="_a_FB0NBJEeOBq5TeEPpHHg" direction="out" isStream="true"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_94bI0NBVEeOBq5TeEPpHHg" name="e0" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_KSOC8NBJEeOBq5TeEPpHHg" target="_Z_mEUNBVEeOBq5TeEPpHHg"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_819w0NBWEeOBq5TeEPpHHg" name="e1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_QcIAcNBJEeOBq5TeEPpHHg" target="_7bpH4NBWEeOBq5TeEPpHHg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_61BP8NBaEeOkO7WV4VQH7Q" name="e2" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_El71kNBJEeOBq5TeEPpHHg" target="_Z_k2MNBVEeOBq5TeEPpHHg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_61BP8NBaEeOkO7WV4VQH7Q" name="e2" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_El71kNBJEeOBq5TeEPpHHg" target="_KqW3cNO9EeOSuJ566X241A"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_-Y8psNBaEeOkO7WV4VQH7Q" name="e5" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_Z_pusNBVEeOBq5TeEPpHHg" target="_fF-fgNObEeOjndw3iBfygg"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_-r6pANBaEeOkO7WV4VQH7Q" name="e6" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_Z_qVwdBVEeOBq5TeEPpHHg" target="_Aa2OQNJDEeOn54dzgFCK-w"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_jIiXENBbEeOkO7WV4VQH7Q" name="e7" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_Z_ldQNBVEeOBq5TeEPpHHg" target="_9zlPkNEaEeOCb-ghqoF7BQ"/>
@@ -66,7 +73,7 @@
       <edge xmi:type="uml:ObjectFlow" xmi:id="_JLgtQNIwEeOn54dzgFCK-w" name="e25" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_HNJjINIwEeOn54dzgFCK-w" target="_4ZvHANBfEeOkO7WV4VQH7Q"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_KMVRENIwEeOn54dzgFCK-w" name="e26" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_HNJjINIwEeOn54dzgFCK-w" target="_UBJaENIwEeOn54dzgFCK-w"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_7dPJ8NIwEeOn54dzgFCK-w" name="e27" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_2j-8ANIwEeOn54dzgFCK-w" target="_v6-AoNIwEeOn54dzgFCK-w"/>
-      <edge xmi:type="uml:ObjectFlow" xmi:id="_WvI04NIxEeOn54dzgFCK-w" name="e28" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_v69ZkNIwEeOn54dzgFCK-w" target="_WBoOoNIxEeOn54dzgFCK-w"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_WvI04NIxEeOn54dzgFCK-w" name="e28" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_wB55gNO5EeOSuJ566X241A" target="_x9BF4NO6EeOSuJ566X241A"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_W4rycNIxEeOn54dzgFCK-w" name="e29" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_WBoOoNIxEeOn54dzgFCK-w" target="_TDC9oNIxEeOn54dzgFCK-w"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_rlV_ANJCEeOn54dzgFCK-w" name="e32" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_ZI_YcNJCEeOn54dzgFCK-w" target="_nRPFgNJCEeOn54dzgFCK-w"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_GNmQANJDEeOn54dzgFCK-w" name="e34" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_Aa2OQNJDEeOn54dzgFCK-w" target="_Q-k7wNJCEeOn54dzgFCK-w"/>
@@ -96,22 +103,44 @@
       <edge xmi:type="uml:ControlFlow" xmi:id="_oXaXMNOyEeOSuJ566X241A" name="e43" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_mTYp8NOyEeOSuJ566X241A" target="_xHkasNOxEeOSuJ566X241A">
         <guard xmi:type="uml:StringExpression" xmi:id="_oXkvQNOyEeOSuJ566X241A" name="else"/>
       </edge>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_sewnENOyEeOSuJ566X241A" name="e38" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_xHkasNOxEeOSuJ566X241A" target="_2j-8ANIwEeOn54dzgFCK-w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_sewnENOyEeOSuJ566X241A" name="e38" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_xHkasNOxEeOSuJ566X241A" target="_a4XJYNO4EeOSuJ566X241A"/>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_vgQCINOyEeOSuJ566X241A" name="e44" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_mTYp8NOyEeOSuJ566X241A" target="_u5SIwNOyEeOSuJ566X241A">
         <guard xmi:type="uml:LiteralNull" xmi:id="_wLMckNOyEeOSuJ566X241A" name="null"/>
       </edge>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_hNnbQNO4EeOSuJ566X241A" name="e45" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_a4tusNO4EeOSuJ566X241A" target="_gakNsNO4EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_kyCkQNO4EeOSuJ566X241A" name="e46" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_gakNsNO4EeOSuJ566X241A" target="_RmuXMNO-EeOSuJ566X241A">
+        <guard xmi:type="uml:StringExpression" xmi:id="_kyOKcNO4EeOSuJ566X241A" name="else"/>
+      </edge>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_mU2a0NO4EeOSuJ566X241A" name="e47" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_gakNsNO4EeOSuJ566X241A" target="_2j-8ANIwEeOn54dzgFCK-w">
+        <guard xmi:type="uml:LiteralInteger" xmi:id="_oYKWYNO4EeOSuJ566X241A" name="1" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_4gOmINO4EeOSuJ566X241A" name="e48" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_2ZoGANO4EeOSuJ566X241A" target="_sM358NO_EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_fYepINO5EeOSuJ566X241A" name="e49" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_2ZoGANO4EeOSuJ566X241A" target="_dkdGwNO5EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_kFjcQNO5EeOSuJ566X241A" name="e51" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_dkdGwNO5EeOSuJ566X241A" target="_CsJ_4NO_EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_kqnRINO5EeOSuJ566X241A" name="e52" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_sNTXwNO_EeOSuJ566X241A" target="_FLGHgNO_EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_geTMQNO6EeOSuJ566X241A" name="e53" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_ThJOwNO5EeOSuJ566X241A" target="_fyDxUNO6EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_hLJrMNO6EeOSuJ566X241A" name="e54" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_fyDxUNO6EeOSuJ566X241A" target="_cyWe8NO6EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_jCx7MNO6EeOSuJ566X241A" name="e55" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_fyDxUNO6EeOSuJ566X241A" target="_iQKygNO6EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_jOlikNO6EeOSuJ566X241A" name="e56" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_iQKygNO6EeOSuJ566X241A" target="_cyN8ENO6EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_x8-poNO6EeOSuJ566X241A" name="e57" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_x9BF4NO6EeOSuJ566X241A" target="_WBoOoNIxEeOn54dzgFCK-w"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_zWcW8NO6EeOSuJ566X241A" name="e58" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_cyMG4NO6EeOSuJ566X241A" target="_x9BF4NO6EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_KqVCQNO9EeOSuJ566X241A" name="e59" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_KqW3cNO9EeOSuJ566X241A" target="_Z_k2MNBVEeOBq5TeEPpHHg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_MsCbUNO9EeOSuJ566X241A" name="e60" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_KqW3cNO9EeOSuJ566X241A" target="_ThMSENO5EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_S5CToNO-EeOSuJ566X241A" name="e50" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_RmuXMNO-EeOSuJ566X241A" target="_2ZoGANO4EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_G1AroNO_EeOSuJ566X241A" name="e61" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_CsCrINO_EeOSuJ566X241A" target="_ThOHQNO5EeOSuJ566X241A"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_HXcqUNO_EeOSuJ566X241A" name="e62" inPartition="_Ll678NBIEeOBq5TeEPpHHg" source="_FLAn8NO_EeOSuJ566X241A" target="_Tg-PoNO5EeOSuJ566X241A"/>
       <variable xmi:id="_WLZ3cNBJEeOBq5TeEPpHHg" name="availableTaxis" type="_SOpAsNObEeOjndw3iBfygg"/>
       <variable xmi:id="_JvSDENBLEeOBq5TeEPpHHg" name="registeredTaxis" type="_SOpAsNObEeOjndw3iBfygg"/>
       <variable xmi:id="_LqhtMNILEeOwq_tH6ejoLA" name="pendingOrders" type="_gTSogNItEeOn54dzgFCK-w"/>
       <variable xmi:id="_F1UF8NIOEeOwq_tH6ejoLA" name="publishTopic" type="_a_FB0NBJEeOBq5TeEPpHHg"/>
       <variable xmi:id="_pTOTkNIPEeOwq_tH6ejoLA" name="tempOrder" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_Ll678NBIEeOBq5TeEPpHHg" name="main" node="_El71kNBJEeOBq5TeEPpHHg _GIIoINBJEeOBq5TeEPpHHg _KSOC8NBJEeOBq5TeEPpHHg _QcIAcNBJEeOBq5TeEPpHHg _Z_eIgNBVEeOBq5TeEPpHHg _Z_k2MNBVEeOBq5TeEPpHHg _Z_ldQNBVEeOBq5TeEPpHHg _Z_mEUNBVEeOBq5TeEPpHHg _Z_nScNBVEeOBq5TeEPpHHg _Z_ogkNBVEeOBq5TeEPpHHg _Z_pusNBVEeOBq5TeEPpHHg _Z_qVwdBVEeOBq5TeEPpHHg _cySOYNBVEeOBq5TeEPpHHg _7bpH4NBWEeOBq5TeEPpHHg _bbVQQNBaEeOBq5TeEPpHHg _cPB-ENBaEeOBq5TeEPpHHg _dffgYNBaEeOBq5TeEPpHHg _4ZvHANBfEeOkO7WV4VQH7Q _9zlPkNEaEeOCb-ghqoF7BQ _IpwgUNIKEeOwq_tH6ejoLA _Ip7fcNIKEeOwq_tH6ejoLA _Ip64YNIKEeOwq_tH6ejoLA _XcSOkNIMEeOwq_tH6ejoLA _1Sfz4NINEeOwq_tH6ejoLA _1Spk4NINEeOwq_tH6ejoLA _1SnvsNINEeOwq_tH6ejoLA _4l5eUNINEeOwq_tH6ejoLA _4mEdcNINEeOwq_tH6ejoLA _4mDPUNINEeOwq_tH6ejoLA _vBRbgNIPEeOwq_tH6ejoLA _usg3ANIQEeOwq_tH6ejoLA _3y07QNIQEeOwq_tH6ejoLA _oD2EcNIREeOwq_tH6ejoLA _oibd4NIREeOwq_tH6ejoLA _l66-MNITEeOwq_tH6ejoLA _l68MUNITEeOwq_tH6ejoLA _wzaKsNITEeOwq_tH6ejoLA _Fr5voNIsEeOn54dzgFCK-w _PhAFINIvEeOn54dzgFCK-w _1blmANIvEeOn54dzgFCK-w _HNJjINIwEeOn54dzgFCK-w _O7OpINIwEeOn54dzgFCK-w _UBJaENIwEeOn54dzgFCK-w _UBHk4NIwEeOn54dzgFCK-w _v62E0NIwEeOn54dzgFCK-w _v6-AoNIwEeOn54dzgFCK-w _v69ZkNIwEeOn54dzgFCK-w _2j-8ANIwEeOn54dzgFCK-w _TC3-gNIxEeOn54dzgFCK-w _TDC9oNIxEeOn54dzgFCK-w _TDBvgNIxEeOn54dzgFCK-w _WBoOoNIxEeOn54dzgFCK-w _Q-k7wNJCEeOn54dzgFCK-w _ZI_YcNJCEeOn54dzgFCK-w _nRPFgNJCEeOn54dzgFCK-w _Aa2OQNJDEeOn54dzgFCK-w _ErmcUNJEEeOn54dzgFCK-w _fFzgYNObEeOjndw3iBfygg _fF-fgNObEeOjndw3iBfygg _fF9RYdObEeOjndw3iBfygg _NAvjANOcEeOjndw3iBfygg _NAz0cNOcEeOjndw3iBfygg _NA3e0NOcEeOjndw3iBfygg _-JGR8NOeEeOjndw3iBfygg _-JIHINOeEeOjndw3iBfygg _-JJVQNOeEeOjndw3iBfygg _-xd5gNOeEeOjndw3iBfygg _-xiK8NOeEeOjndw3iBfygg _-xkAINOeEeOjndw3iBfygg _g4_vwNOwEeOSuJ566X241A _pAbUcdOxEeOSuJ566X241A _xHkasNOxEeOSuJ566X241A _lK4w0NOyEeOSuJ566X241A _mTYp8NOyEeOSuJ566X241A _u5SIwNOyEeOSuJ566X241A" edge="_94bI0NBVEeOBq5TeEPpHHg _819w0NBWEeOBq5TeEPpHHg _61BP8NBaEeOkO7WV4VQH7Q _-Y8psNBaEeOkO7WV4VQH7Q _-r6pANBaEeOkO7WV4VQH7Q _jIiXENBbEeOkO7WV4VQH7Q __zn0sNEaEeOCb-ghqoF7BQ _6dQokNINEeOwq_tH6ejoLA _QhgQ8NIQEeOwq_tH6ejoLA _0kFHUNIQEeOwq_tH6ejoLA _4oOSMNIQEeOwq_tH6ejoLA _40elgNIQEeOwq_tH6ejoLA _5AfoQNIQEeOwq_tH6ejoLA _5Ox74NIQEeOwq_tH6ejoLA _ufX9cNIREeOwq_tH6ejoLA _uuD5sNIREeOwq_tH6ejoLA _x1LJsNITEeOwq_tH6ejoLA _y3LZQNITEeOwq_tH6ejoLA _x0hYsNIvEeOn54dzgFCK-w _1bjw0NIvEeOn54dzgFCK-w _JLgtQNIwEeOn54dzgFCK-w _KMVRENIwEeOn54dzgFCK-w _7dPJ8NIwEeOn54dzgFCK-w _WvI04NIxEeOn54dzgFCK-w _W4rycNIxEeOn54dzgFCK-w _rlV_ANJCEeOn54dzgFCK-w _GNmQANJDEeOn54dzgFCK-w _ErknINJEEeOn54dzgFCK-w _RU77YNJEEeOn54dzgFCK-w _ABungNOfEeOjndw3iBfygg _ASUBMNOfEeOjndw3iBfygg _BQXk4NOfEeOjndw3iBfygg _Bfb7oNOfEeOjndw3iBfygg _BvSVgNOfEeOjndw3iBfygg _jA6JYNOuEeOqoJe30_hgzQ _Ea-scNOvEeOqoJe30_hgzQ _3EuAgNOvEeOSuJ566X241A _jLXbANOwEeOSuJ566X241A _nrp54NOxEeOSuJ566X241A _pAY4MNOxEeOSuJ566X241A _1RD_oNOxEeOSuJ566X241A _nEy4wNOyEeOSuJ566X241A _oXaXMNOyEeOSuJ566X241A _sewnENOyEeOSuJ566X241A _vgQCINOyEeOSuJ566X241A"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_Ll678NBIEeOBq5TeEPpHHg" name="main" node="_El71kNBJEeOBq5TeEPpHHg _GIIoINBJEeOBq5TeEPpHHg _KSOC8NBJEeOBq5TeEPpHHg _QcIAcNBJEeOBq5TeEPpHHg _Z_eIgNBVEeOBq5TeEPpHHg _Z_k2MNBVEeOBq5TeEPpHHg _Z_ldQNBVEeOBq5TeEPpHHg _Z_mEUNBVEeOBq5TeEPpHHg _Z_nScNBVEeOBq5TeEPpHHg _Z_ogkNBVEeOBq5TeEPpHHg _Z_pusNBVEeOBq5TeEPpHHg _Z_qVwdBVEeOBq5TeEPpHHg _cySOYNBVEeOBq5TeEPpHHg _7bpH4NBWEeOBq5TeEPpHHg _bbVQQNBaEeOBq5TeEPpHHg _cPB-ENBaEeOBq5TeEPpHHg _dffgYNBaEeOBq5TeEPpHHg _4ZvHANBfEeOkO7WV4VQH7Q _9zlPkNEaEeOCb-ghqoF7BQ _IpwgUNIKEeOwq_tH6ejoLA _Ip7fcNIKEeOwq_tH6ejoLA _Ip64YNIKEeOwq_tH6ejoLA _XcSOkNIMEeOwq_tH6ejoLA _1Sfz4NINEeOwq_tH6ejoLA _1Spk4NINEeOwq_tH6ejoLA _1SnvsNINEeOwq_tH6ejoLA _4l5eUNINEeOwq_tH6ejoLA _4mEdcNINEeOwq_tH6ejoLA _4mDPUNINEeOwq_tH6ejoLA _vBRbgNIPEeOwq_tH6ejoLA _usg3ANIQEeOwq_tH6ejoLA _3y07QNIQEeOwq_tH6ejoLA _oD2EcNIREeOwq_tH6ejoLA _oibd4NIREeOwq_tH6ejoLA _l66-MNITEeOwq_tH6ejoLA _l68MUNITEeOwq_tH6ejoLA _wzaKsNITEeOwq_tH6ejoLA _Fr5voNIsEeOn54dzgFCK-w _PhAFINIvEeOn54dzgFCK-w _1blmANIvEeOn54dzgFCK-w _HNJjINIwEeOn54dzgFCK-w _O7OpINIwEeOn54dzgFCK-w _UBJaENIwEeOn54dzgFCK-w _UBHk4NIwEeOn54dzgFCK-w _v62E0NIwEeOn54dzgFCK-w _v6-AoNIwEeOn54dzgFCK-w _2j-8ANIwEeOn54dzgFCK-w _TC3-gNIxEeOn54dzgFCK-w _TDC9oNIxEeOn54dzgFCK-w _TDBvgNIxEeOn54dzgFCK-w _WBoOoNIxEeOn54dzgFCK-w _Q-k7wNJCEeOn54dzgFCK-w _ZI_YcNJCEeOn54dzgFCK-w _nRPFgNJCEeOn54dzgFCK-w _Aa2OQNJDEeOn54dzgFCK-w _ErmcUNJEEeOn54dzgFCK-w _fFzgYNObEeOjndw3iBfygg _fF-fgNObEeOjndw3iBfygg _fF9RYdObEeOjndw3iBfygg _NAvjANOcEeOjndw3iBfygg _NAz0cNOcEeOjndw3iBfygg _NA3e0NOcEeOjndw3iBfygg _-JGR8NOeEeOjndw3iBfygg _-JIHINOeEeOjndw3iBfygg _-JJVQNOeEeOjndw3iBfygg _-xd5gNOeEeOjndw3iBfygg _-xiK8NOeEeOjndw3iBfygg _-xkAINOeEeOjndw3iBfygg _g4_vwNOwEeOSuJ566X241A _pAbUcdOxEeOSuJ566X241A _xHkasNOxEeOSuJ566X241A _lK4w0NOyEeOSuJ566X241A _mTYp8NOyEeOSuJ566X241A _u5SIwNOyEeOSuJ566X241A _a4XJYNO4EeOSuJ566X241A _a4tusNO4EeOSuJ566X241A _gakNsNO4EeOSuJ566X241A _2ZoGANO4EeOSuJ566X241A _TgWkkNO5EeOSuJ566X241A _Tg5XINO5EeOSuJ566X241A _Tg7zYNO5EeOSuJ566X241A _Tg-PoNO5EeOSuJ566X241A _ThJOwNO5EeOSuJ566X241A _ThMSENO5EeOSuJ566X241A _ThOHQNO5EeOSuJ566X241A _dkdGwNO5EeOSuJ566X241A _wB55gNO5EeOSuJ566X241A _cxpUUNO6EeOSuJ566X241A _cyN8ENO6EeOSuJ566X241A _cyWe8NO6EeOSuJ566X241A _cyMG4NO6EeOSuJ566X241A _fyDxUNO6EeOSuJ566X241A _iQKygNO6EeOSuJ566X241A _x9BF4NO6EeOSuJ566X241A _KqW3cNO9EeOSuJ566X241A _RmuXMNO-EeOSuJ566X241A _CrX8wNO_EeOSuJ566X241A _CsJ_4NO_EeOSuJ566X241A _CsCrINO_EeOSuJ566X241A _FKY84NO_EeOSuJ566X241A _FLGHgNO_EeOSuJ566X241A _FLAn8NO_EeOSuJ566X241A _sM358NO_EeOSuJ566X241A _sNTXwNO_EeOSuJ566X241A" edge="_94bI0NBVEeOBq5TeEPpHHg _819w0NBWEeOBq5TeEPpHHg _61BP8NBaEeOkO7WV4VQH7Q _-Y8psNBaEeOkO7WV4VQH7Q _-r6pANBaEeOkO7WV4VQH7Q _jIiXENBbEeOkO7WV4VQH7Q __zn0sNEaEeOCb-ghqoF7BQ _6dQokNINEeOwq_tH6ejoLA _QhgQ8NIQEeOwq_tH6ejoLA _0kFHUNIQEeOwq_tH6ejoLA _4oOSMNIQEeOwq_tH6ejoLA _40elgNIQEeOwq_tH6ejoLA _5AfoQNIQEeOwq_tH6ejoLA _5Ox74NIQEeOwq_tH6ejoLA _ufX9cNIREeOwq_tH6ejoLA _uuD5sNIREeOwq_tH6ejoLA _x1LJsNITEeOwq_tH6ejoLA _y3LZQNITEeOwq_tH6ejoLA _x0hYsNIvEeOn54dzgFCK-w _1bjw0NIvEeOn54dzgFCK-w _JLgtQNIwEeOn54dzgFCK-w _KMVRENIwEeOn54dzgFCK-w _7dPJ8NIwEeOn54dzgFCK-w _WvI04NIxEeOn54dzgFCK-w _W4rycNIxEeOn54dzgFCK-w _rlV_ANJCEeOn54dzgFCK-w _GNmQANJDEeOn54dzgFCK-w _ErknINJEEeOn54dzgFCK-w _RU77YNJEEeOn54dzgFCK-w _ABungNOfEeOjndw3iBfygg _ASUBMNOfEeOjndw3iBfygg _BQXk4NOfEeOjndw3iBfygg _Bfb7oNOfEeOjndw3iBfygg _BvSVgNOfEeOjndw3iBfygg _jA6JYNOuEeOqoJe30_hgzQ _Ea-scNOvEeOqoJe30_hgzQ _3EuAgNOvEeOSuJ566X241A _jLXbANOwEeOSuJ566X241A _nrp54NOxEeOSuJ566X241A _pAY4MNOxEeOSuJ566X241A _1RD_oNOxEeOSuJ566X241A _nEy4wNOyEeOSuJ566X241A _oXaXMNOyEeOSuJ566X241A _sewnENOyEeOSuJ566X241A _vgQCINOyEeOSuJ566X241A _hNnbQNO4EeOSuJ566X241A _kyCkQNO4EeOSuJ566X241A _mU2a0NO4EeOSuJ566X241A _4gOmINO4EeOSuJ566X241A _fYepINO5EeOSuJ566X241A _kFjcQNO5EeOSuJ566X241A _kqnRINO5EeOSuJ566X241A _geTMQNO6EeOSuJ566X241A _hLJrMNO6EeOSuJ566X241A _jCx7MNO6EeOSuJ566X241A _jOlikNO6EeOSuJ566X241A _x8-poNO6EeOSuJ566X241A _zWcW8NO6EeOSuJ566X241A _KqVCQNO9EeOSuJ566X241A _MsCbUNO9EeOSuJ566X241A _S5CToNO-EeOSuJ566X241A _G1AroNO_EeOSuJ566X241A _HXcqUNO_EeOSuJ566X241A"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_El71kNBJEeOBq5TeEPpHHg" name="init" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_61BP8NBaEeOkO7WV4VQH7Q" parameter="_EmCjQNBJEeOBq5TeEPpHHg"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_GIIoINBJEeOBq5TeEPpHHg" name="error" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="__zn0sNEaEeOCb-ghqoF7BQ" parameter="_GINgoNBJEeOBq5TeEPpHHg"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_KSOC8NBJEeOBq5TeEPpHHg" name="messageTopic" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_94bI0NBVEeOBq5TeEPpHHg" type="_a_FB0NBJEeOBq5TeEPpHHg" parameter="_KSTigNBJEeOBq5TeEPpHHg"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_QcIAcNBJEeOBq5TeEPpHHg" name="messageData" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_819w0NBWEeOBq5TeEPpHHg" type="_BQTDkNBWEeOBq5TeEPpHHg" parameter="_aa_JcNIOEeOwq_tH6ejoLA"/>
       <node xmi:type="uml:CallBehaviorAction" xmi:id="_Z_eIgNBVEeOBq5TeEPpHHg" name="c0" inPartition="_Ll678NBIEeOBq5TeEPpHHg" behavior="_zpGtwNBYEeOBq5TeEPpHHg">
-        <argument xmi:id="_Z_k2MNBVEeOBq5TeEPpHHg" name="init" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_61BP8NBaEeOkO7WV4VQH7Q"/>
+        <argument xmi:id="_Z_k2MNBVEeOBq5TeEPpHHg" name="init" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_KqVCQNO9EeOSuJ566X241A"/>
         <argument xmi:id="_Z_mEUNBVEeOBq5TeEPpHHg" name="messageTopic" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_94bI0NBVEeOBq5TeEPpHHg" type="_a_FB0NBJEeOBq5TeEPpHHg"/>
         <argument xmi:id="_7bpH4NBWEeOBq5TeEPpHHg" name="messageData" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_819w0NBWEeOBq5TeEPpHHg" type="_BQTDkNBWEeOBq5TeEPpHHg"/>
         <result xmi:id="_Z_ldQNBVEeOBq5TeEPpHHg" name="unknownTopic" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_jIiXENBbEeOkO7WV4VQH7Q"/>
@@ -169,14 +198,14 @@
       </node>
       <node xmi:type="uml:CallOperationAction" xmi:id="_v62E0NIwEeOn54dzgFCK-w" name="o8" inPartition="_Ll678NBIEeOBq5TeEPpHHg" operation="_mfzoINBLEeOBq5TeEPpHHg">
         <argument xmi:id="_v6-AoNIwEeOn54dzgFCK-w" name="order" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_7dPJ8NIwEeOn54dzgFCK-w" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
-        <result xmi:id="_v69ZkNIwEeOn54dzgFCK-w" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_WvI04NIxEeOn54dzgFCK-w" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
+        <result xmi:id="_wB55gNO5EeOSuJ566X241A" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_WvI04NIxEeOn54dzgFCK-w" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
       </node>
-      <node xmi:type="uml:ReadVariableAction" xmi:id="_2j-8ANIwEeOn54dzgFCK-w" name="rv1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_7dPJ8NIwEeOn54dzgFCK-w" incoming="_sewnENOyEeOSuJ566X241A" variable="_pTOTkNIPEeOwq_tH6ejoLA"/>
+      <node xmi:type="uml:ReadVariableAction" xmi:id="_2j-8ANIwEeOn54dzgFCK-w" name="rv1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_7dPJ8NIwEeOn54dzgFCK-w" incoming="_mU2a0NO4EeOSuJ566X241A" variable="_pTOTkNIPEeOwq_tH6ejoLA"/>
       <node xmi:type="uml:CallOperationAction" xmi:id="_TC3-gNIxEeOn54dzgFCK-w" name="o9" inPartition="_Ll678NBIEeOBq5TeEPpHHg" operation="_RBwbUNIxEeOn54dzgFCK-w">
         <argument xmi:id="_TDC9oNIxEeOn54dzgFCK-w" name="order" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_W4rycNIxEeOn54dzgFCK-w" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
         <result xmi:id="_TDBvgNIxEeOn54dzgFCK-w" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_jLXbANOwEeOSuJ566X241A" type="_a_FB0NBJEeOBq5TeEPpHHg"/>
       </node>
-      <node xmi:type="uml:ForkNode" xmi:id="_WBoOoNIxEeOn54dzgFCK-w" name="f1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_W4rycNIxEeOn54dzgFCK-w _jA6JYNOuEeOqoJe30_hgzQ _nrp54NOxEeOSuJ566X241A" incoming="_WvI04NIxEeOn54dzgFCK-w"/>
+      <node xmi:type="uml:ForkNode" xmi:id="_WBoOoNIxEeOn54dzgFCK-w" name="f1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_W4rycNIxEeOn54dzgFCK-w _jA6JYNOuEeOqoJe30_hgzQ _nrp54NOxEeOSuJ566X241A" incoming="_x8-poNO6EeOSuJ566X241A"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_nRPFgNJCEeOn54dzgFCK-w" name="d1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_ErknINJEEeOn54dzgFCK-w _RU77YNJEEeOn54dzgFCK-w _1RD_oNOxEeOSuJ566X241A" incoming="_rlV_ANJCEeOn54dzgFCK-w"/>
       <node xmi:type="uml:AddVariableValueAction" xmi:id="_Aa2OQNJDEeOn54dzgFCK-w" name="sv3" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_GNmQANJDEeOn54dzgFCK-w" incoming="_-r6pANBaEeOkO7WV4VQH7Q" variable="_pTOTkNIPEeOwq_tH6ejoLA"/>
       <node xmi:type="uml:FlowFinalNode" xmi:id="_ErmcUNJEEeOn54dzgFCK-w" name="z1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_ErknINJEEeOn54dzgFCK-w"/>
@@ -199,6 +228,41 @@
       <node xmi:type="uml:MergeNode" xmi:id="_xHkasNOxEeOSuJ566X241A" name="m0" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_sewnENOyEeOSuJ566X241A" incoming="_Ea-scNOvEeOqoJe30_hgzQ _1RD_oNOxEeOSuJ566X241A _oXaXMNOyEeOSuJ566X241A"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_mTYp8NOyEeOSuJ566X241A" name="d2" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_oXaXMNOyEeOSuJ566X241A _vgQCINOyEeOSuJ566X241A" incoming="_nEy4wNOyEeOSuJ566X241A"/>
       <node xmi:type="uml:FlowFinalNode" xmi:id="_u5SIwNOyEeOSuJ566X241A" name="z2" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_vgQCINOyEeOSuJ566X241A"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_a4XJYNO4EeOSuJ566X241A" name="o13" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_sewnENOyEeOSuJ566X241A" operation="_Z34j0NO4EeOSuJ566X241A">
+        <result xmi:id="_a4tusNO4EeOSuJ566X241A" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_hNnbQNO4EeOSuJ566X241A" type="_fWosYNBTEeOBq5TeEPpHHg"/>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_gakNsNO4EeOSuJ566X241A" name="d3" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_kyCkQNO4EeOSuJ566X241A _mU2a0NO4EeOSuJ566X241A" incoming="_hNnbQNO4EeOSuJ566X241A"/>
+      <node xmi:type="uml:ForkNode" xmi:id="_2ZoGANO4EeOSuJ566X241A" name="f2" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_4gOmINO4EeOSuJ566X241A _fYepINO5EeOSuJ566X241A" incoming="_S5CToNO-EeOSuJ566X241A"/>
+      <node xmi:type="uml:CallBehaviorAction" xmi:id="_TgWkkNO5EeOSuJ566X241A" name="c1" inPartition="_Ll678NBIEeOBq5TeEPpHHg" behavior="_Whj7gtOoEeO_iojVxqkO5Q">
+        <argument xmi:id="_Tg-PoNO5EeOSuJ566X241A" name="availableTaxis" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_HXcqUNO_EeOSuJ566X241A" type="_SOpAsNObEeOjndw3iBfygg"/>
+        <argument xmi:id="_ThMSENO5EeOSuJ566X241A" name="init" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_MsCbUNO9EeOSuJ566X241A"/>
+        <argument xmi:id="_ThOHQNO5EeOSuJ566X241A" name="toAddress" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_G1AroNO_EeOSuJ566X241A" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
+        <result xmi:id="_Tg5XINO5EeOSuJ566X241A" name="remoteError" inPartition="_Ll678NBIEeOBq5TeEPpHHg" type="_a_FB0NBJEeOBq5TeEPpHHg"/>
+        <result xmi:id="_Tg7zYNO5EeOSuJ566X241A" name="localError" inPartition="_Ll678NBIEeOBq5TeEPpHHg"/>
+        <result xmi:id="_ThJOwNO5EeOSuJ566X241A" name="nearestTaxi" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_geTMQNO6EeOSuJ566X241A" type="_fF9RYNObEeOjndw3iBfygg"/>
+      </node>
+      <node xmi:type="uml:ReadVariableAction" xmi:id="_dkdGwNO5EeOSuJ566X241A" name="rv3" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_kFjcQNO5EeOSuJ566X241A" incoming="_fYepINO5EeOSuJ566X241A" variable="_pTOTkNIPEeOwq_tH6ejoLA"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_cxpUUNO6EeOSuJ566X241A" name="o14" inPartition="_Ll678NBIEeOBq5TeEPpHHg" operation="_9yxBUNO5EeOSuJ566X241A">
+        <argument xmi:id="_cyN8ENO6EeOSuJ566X241A" name="order" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_jOlikNO6EeOSuJ566X241A" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
+        <argument xmi:id="_cyWe8NO6EeOSuJ566X241A" name="tqi" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_hLJrMNO6EeOSuJ566X241A" type="_fF9RYNObEeOjndw3iBfygg"/>
+        <result xmi:id="_cyMG4NO6EeOSuJ566X241A" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_zWcW8NO6EeOSuJ566X241A" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
+      </node>
+      <node xmi:type="uml:ForkNode" xmi:id="_fyDxUNO6EeOSuJ566X241A" name="f3" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_hLJrMNO6EeOSuJ566X241A _jCx7MNO6EeOSuJ566X241A" incoming="_geTMQNO6EeOSuJ566X241A"/>
+      <node xmi:type="uml:ReadVariableAction" xmi:id="_iQKygNO6EeOSuJ566X241A" name="rv4" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_jOlikNO6EeOSuJ566X241A" incoming="_jCx7MNO6EeOSuJ566X241A" variable="_pTOTkNIPEeOwq_tH6ejoLA"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_x9BF4NO6EeOSuJ566X241A" name="m2" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_x8-poNO6EeOSuJ566X241A" incoming="_WvI04NIxEeOn54dzgFCK-w _zWcW8NO6EeOSuJ566X241A"/>
+      <node xmi:type="uml:ForkNode" xmi:id="_KqW3cNO9EeOSuJ566X241A" name="f4" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_KqVCQNO9EeOSuJ566X241A _MsCbUNO9EeOSuJ566X241A" incoming="_61BP8NBaEeOkO7WV4VQH7Q"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_RmuXMNO-EeOSuJ566X241A" name="o15" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_S5CToNO-EeOSuJ566X241A" incoming="_kyCkQNO4EeOSuJ566X241A" operation="_IGsycNO-EeOSuJ566X241A"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_CrX8wNO_EeOSuJ566X241A" name="o16" inPartition="_Ll678NBIEeOBq5TeEPpHHg" operation="_4BcwsNO-EeOSuJ566X241A">
+        <argument xmi:id="_CsJ_4NO_EeOSuJ566X241A" name="o" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_kFjcQNO5EeOSuJ566X241A" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
+        <result xmi:id="_CsCrINO_EeOSuJ566X241A" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_G1AroNO_EeOSuJ566X241A" type="_S2I8EdBaEeOBq5TeEPpHHg"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_FKY84NO_EeOSuJ566X241A" name="o17" inPartition="_Ll678NBIEeOBq5TeEPpHHg" operation="_A0fToNO_EeOSuJ566X241A">
+        <argument xmi:id="_FLGHgNO_EeOSuJ566X241A" name="a" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_kqnRINO5EeOSuJ566X241A" type="_SOpAsNObEeOjndw3iBfygg"/>
+        <result xmi:id="_FLAn8NO_EeOSuJ566X241A" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_HXcqUNO_EeOSuJ566X241A" type="_SOpAsNObEeOjndw3iBfygg"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_sM358NO_EeOSuJ566X241A" name="o18" inPartition="_Ll678NBIEeOBq5TeEPpHHg" incoming="_4gOmINO4EeOSuJ566X241A" operation="_p-60oNO_EeOSuJ566X241A">
+        <result xmi:id="_sNTXwNO_EeOSuJ566X241A" name="" inPartition="_Ll678NBIEeOBq5TeEPpHHg" outgoing="_kqnRINO5EeOSuJ566X241A" type="_SOpAsNObEeOjndw3iBfygg"/>
+      </node>
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_a_FB0NBJEeOBq5TeEPpHHg" name="java.lang.String"/>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_73cmANBJEeOBq5TeEPpHHg" name="java.util.ArrayList"/>
@@ -298,6 +362,44 @@
         <expr xmi:type="uml:LiteralString" xmi:id="_pAdwsNOxEeOSuJ566X241A" name="t1" value="1000"/>
       </when>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_TgdSQNO5EeOSuJ566X241A" name="deniro">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_Whj7gtOoEeO_iojVxqkO5Q" name="CalculatingRoute" classifierBehavior="_Tgl1INO5EeOSuJ566X241A" group="_TgegYNO5EeOSuJ566X241A" partition="_TgegYNO5EeOSuJ566X241A" node="_TgegYdO5EeOSuJ566X241A _TggVkNO5EeOSuJ566X241A _Tgix0NO5EeOSuJ566X241A _TgjY4NO5EeOSuJ566X241A _Tgj_8NO5EeOSuJ566X241A _TgknANO5EeOSuJ566X241A">
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Tgl1INO5EeOSuJ566X241A" name="CalculatingRoute">
+          <region xmi:id="_TgtJ4dO5EeOSuJ566X241A" name="&lt;region>">
+            <transition xmi:id="_TguYAdO5EeOSuJ566X241A" name=" / remoteError" source="_Tgtw8dO5EeOSuJ566X241A" target="_TguYANO5EeOSuJ566X241A"/>
+            <transition xmi:id="_TgxbUNO5EeOSuJ566X241A" name=" / localError" source="_Tgtw8dO5EeOSuJ566X241A" target="_TguYANO5EeOSuJ566X241A"/>
+            <transition xmi:id="_TgzQgNO5EeOSuJ566X241A" name="availableTaxis / " source="_Tgtw8dO5EeOSuJ566X241A" target="_Tgtw8dO5EeOSuJ566X241A"/>
+            <transition xmi:id="_Tg0eoNO5EeOSuJ566X241A" name=" / nearestTaxi" source="_Tgtw8dO5EeOSuJ566X241A" target="_Tgtw8dO5EeOSuJ566X241A"/>
+            <transition xmi:id="_Tg1swNO5EeOSuJ566X241A" name="init / " source="_Tgtw8NO5EeOSuJ566X241A" target="_Tgtw8dO5EeOSuJ566X241A"/>
+            <transition xmi:id="_Tg3h8NO5EeOSuJ566X241A" name="toAddress / " source="_Tgtw8dO5EeOSuJ566X241A" target="_Tgtw8dO5EeOSuJ566X241A"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_Tgtw8NO5EeOSuJ566X241A" name="&lt;initial>"/>
+            <subvertex xmi:type="uml:State" xmi:id="_Tgtw8dO5EeOSuJ566X241A" name="active"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_TguYANO5EeOSuJ566X241A" name="&lt;final>"/>
+          </region>
+        </ownedBehavior>
+        <ownedParameter xmi:id="_TgfHcNO5EeOSuJ566X241A" name="remoteError" type="_a_FB0NBJEeOBq5TeEPpHHg" direction="out" parameterSet="_TgfugNO5EeOSuJ566X241A"/>
+        <ownedParameter xmi:id="_TggVkdO5EeOSuJ566X241A" name="localError" direction="out" parameterSet="_TgiKwNO5EeOSuJ566X241A"/>
+        <ownedParameter xmi:id="_Tgix0dO5EeOSuJ566X241A" name="availableTaxis" type="_SOpAsNObEeOjndw3iBfygg" isStream="true"/>
+        <ownedParameter xmi:id="_TgjY4dO5EeOSuJ566X241A" name="nearestTaxi" type="_fF9RYNObEeOjndw3iBfygg" direction="out" isStream="true"/>
+        <ownedParameter xmi:id="_Tgj_8dO5EeOSuJ566X241A" name="init"/>
+        <ownedParameter xmi:id="_TgknAdO5EeOSuJ566X241A" name="toAddress" type="_S2I8EdBaEeOBq5TeEPpHHg" isStream="true"/>
+        <ownedParameterSet xmi:id="_TgfugNO5EeOSuJ566X241A" name="remoteError" parameter="_TgfHcNO5EeOSuJ566X241A"/>
+        <ownedParameterSet xmi:id="_TgiKwNO5EeOSuJ566X241A" name="localError" parameter="_TggVkdO5EeOSuJ566X241A"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_TgegYNO5EeOSuJ566X241A" name="main" node="_TgegYdO5EeOSuJ566X241A _TggVkNO5EeOSuJ566X241A _Tgix0NO5EeOSuJ566X241A _TgjY4NO5EeOSuJ566X241A _Tgj_8NO5EeOSuJ566X241A _TgknANO5EeOSuJ566X241A"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_TgegYdO5EeOSuJ566X241A" name="remoteError" inPartition="_TgegYNO5EeOSuJ566X241A" type="_a_FB0NBJEeOBq5TeEPpHHg" parameter="_TgfHcNO5EeOSuJ566X241A"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_TggVkNO5EeOSuJ566X241A" name="localError" inPartition="_TgegYNO5EeOSuJ566X241A" parameter="_TggVkdO5EeOSuJ566X241A"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_Tgix0NO5EeOSuJ566X241A" name="availableTaxis" inPartition="_TgegYNO5EeOSuJ566X241A" type="_SOpAsNObEeOjndw3iBfygg" parameter="_Tgix0dO5EeOSuJ566X241A"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_TgjY4NO5EeOSuJ566X241A" name="nearestTaxi" inPartition="_TgegYNO5EeOSuJ566X241A" type="_fF9RYNObEeOjndw3iBfygg" parameter="_TgjY4dO5EeOSuJ566X241A"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_Tgj_8NO5EeOSuJ566X241A" name="init" inPartition="_TgegYNO5EeOSuJ566X241A" parameter="_Tgj_8dO5EeOSuJ566X241A"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_TgknANO5EeOSuJ566X241A" name="toAddress" inPartition="_TgegYNO5EeOSuJ566X241A" type="_S2I8EdBaEeOBq5TeEPpHHg" parameter="_TgknAdO5EeOSuJ566X241A"/>
+      </packagedElement>
+      <profileApplication xmi:id="_Tgl1IdO5EeOSuJ566X241A">
+        <eAnnotations xmi:id="_Tgr7wNO5EeOSuJ566X241A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
+        </eAnnotations>
+        <appliedProfile href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_rE77YK4iEduZSuTiwKs5Lw"/>
+      </profileApplication>
+    </packagedElement>
     <profileApplication xmi:id="_Ll34odBIEeOBq5TeEPpHHg">
       <eAnnotations xmi:id="_Ll4fsNBIEeOBq5TeEPpHHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
@@ -311,11 +413,11 @@
       <appliedProfile href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_UEANMUVlEduH9aQE_pc66w"/>
     </profileApplication>
   </uml:Package>
-  <graphics:Shape xmi:id="_Lofu0NBIEeOBq5TeEPpHHg" x="54" y="-18" width="1117" height="55" base_Element="_Ll5GwNBIEeOBq5TeEPpHHg"/>
-  <graphics:Shape xmi:id="_LogV4NBIEeOBq5TeEPpHHg" x="54" y="36" width="1117" height="577" base_Element="_Ll678NBIEeOBq5TeEPpHHg"/>
+  <graphics:Shape xmi:id="_Lofu0NBIEeOBq5TeEPpHHg" x="54" y="54" width="1117" height="55" base_Element="_Ll5GwNBIEeOBq5TeEPpHHg"/>
+  <graphics:Shape xmi:id="_LogV4NBIEeOBq5TeEPpHHg" x="54" y="108" width="1117" height="703" base_Element="_Ll678NBIEeOBq5TeEPpHHg"/>
   <arctis:esm xmi:id="_Log88dBIEeOBq5TeEPpHHg" base_StateMachine="_Log88NBIEeOBq5TeEPpHHg"/>
   <graphics:Shape xmi:id="_EoI1ANBJEeOBq5TeEPpHHg" x="180" y="36" base_Element="_El71kNBJEeOBq5TeEPpHHg" orientation="north"/>
-  <graphics:Shape xmi:id="_GIQj8NBJEeOBq5TeEPpHHg" x="180" y="540" base_Element="_GIIoINBJEeOBq5TeEPpHHg"/>
+  <graphics:Shape xmi:id="_GIQj8NBJEeOBq5TeEPpHHg" x="180" y="810" base_Element="_GIIoINBJEeOBq5TeEPpHHg"/>
   <graphics:Shape xmi:id="_KSWl0NBJEeOBq5TeEPpHHg" x="-108" y="216" base_Element="_KSOC8NBJEeOBq5TeEPpHHg" orientation="west"/>
   <graphics:Shape xmi:id="_QcP8QNBJEeOBq5TeEPpHHg" x="-108" y="288" base_Element="_QcIAcNBJEeOBq5TeEPpHHg" orientation="west"/>
   <arctis:location xmi:id="_WLbFkNBJEeOBq5TeEPpHHg" base_Variable="_WLZ3cNBJEeOBq5TeEPpHHg" partition="_Ll678NBIEeOBq5TeEPpHHg"/>
@@ -343,7 +445,7 @@
   <graphics:Shape xmi:id="_cPLvENBaEeOBq5TeEPpHHg" x="702" y="216" width="163" height="55" base_Element="_cPB-ENBaEeOBq5TeEPpHHg" orientation="east"/>
   <graphics:Shape xmi:id="_dflnANBaEeOBq5TeEPpHHg" x="612" y="306" width="163" height="55" base_Element="_dffgYNBaEeOBq5TeEPpHHg" orientation="east"/>
   <graphics:Shape xmi:id="_4Z44ANBfEeOkO7WV4VQH7Q" x="1170" y="324" base_Element="_4ZvHANBfEeOkO7WV4VQH7Q" orientation="east"/>
-  <graphics:Shape xmi:id="_916K0NEaEeOCb-ghqoF7BQ" x="171" y="495" width="37" height="37" base_Element="_9zlPkNEaEeOCb-ghqoF7BQ"/>
+  <graphics:Shape xmi:id="_916K0NEaEeOCb-ghqoF7BQ" x="171" y="765" width="37" height="37" base_Element="_9zlPkNEaEeOCb-ghqoF7BQ"/>
   <graphics:Shape xmi:id="_Ip97sNIKEeOwq_tH6ejoLA" x="612" y="414" width="163" height="55" base_Element="_IpwgUNIKEeOwq_tH6ejoLA" orientation="east"/>
   <arctis:location xmi:id="_Lqi7UNILEeOwq_tH6ejoLA" base_Variable="_LqhtMNILEeOwq_tH6ejoLA" partition="_Ll678NBIEeOBq5TeEPpHHg"/>
   <graphics:Shape xmi:id="_LqjiYNILEeOwq_tH6ejoLA" x="954" y="144" base_Element="_LqhtMNILEeOwq_tH6ejoLA"/>
@@ -379,8 +481,8 @@
   <graphics:Shape xmi:id="_6-rbINIvEeOn54dzgFCK-w" aux1="200 0 0 72 " base_Element="_5AfoQNIQEeOwq_tH6ejoLA"/>
   <graphics:Shape xmi:id="_HNN0kNIwEeOn54dzgFCK-w" x="1098" y="324" width="54" height="19" base_Element="_HNJjINIwEeOn54dzgFCK-w" orientation="north"/>
   <graphics:Shape xmi:id="_O7oRwNIwEeOn54dzgFCK-w" x="1062" y="360" width="127" height="55" base_Element="_O7OpINIwEeOn54dzgFCK-w"/>
-  <graphics:Shape xmi:id="_v7Ac4NIwEeOn54dzgFCK-w" x="792" y="576" width="145" height="55" base_Element="_v62E0NIwEeOn54dzgFCK-w" orientation="east"/>
-  <graphics:Shape xmi:id="_2kAKINIwEeOn54dzgFCK-w" x="720" y="540" width="163" height="55" base_Element="_2j-8ANIwEeOn54dzgFCK-w" orientation="south"/>
+  <graphics:Shape xmi:id="_v7Ac4NIwEeOn54dzgFCK-w" x="540" y="612" width="145" height="55" base_Element="_v62E0NIwEeOn54dzgFCK-w" orientation="east"/>
+  <graphics:Shape xmi:id="_2kAKINIwEeOn54dzgFCK-w" x="450" y="558" width="163" height="55" base_Element="_2j-8ANIwEeOn54dzgFCK-w" orientation="south"/>
   <graphics:Shape xmi:id="_TDGA8NIxEeOn54dzgFCK-w" x="972" y="450" width="127" height="55" base_Element="_TC3-gNIxEeOn54dzgFCK-w"/>
   <graphics:Shape xmi:id="_WBrR8NIxEeOn54dzgFCK-w" x="1008" y="414" width="54" height="19" base_Element="_WBoOoNIxEeOn54dzgFCK-w" orientation="north"/>
   <arctis:event xmi:id="_CXkpYNIyEeOn54dzgFCK-w" base_Transition="_CXkCUNIyEeOn54dzgFCK-w" effects="_Fr5voNIsEeOn54dzgFCK-w _g4_vwNOwEeOSuJ566X241A"/>
@@ -392,7 +494,7 @@
   <graphics:Shape xmi:id="_vpQNANLJEeOml9cvdMWzbw" x="756" y="288" base_Element="_ErqtwNJEEeOn54dzgFCK-w"/>
   <graphics:Shape xmi:id="_5buXMNLKEeOml9cvdMWzbw" x="846" y="414" base_Element="_40JZ0NLKEeOml9cvdMWzbw"/>
   <graphics:Shape xmi:id="_dErLoNLWEeOx5avAN5V2sw" aux1="" base_Element="_RU77YNJEEeOn54dzgFCK-w"/>
-  <graphics:Shape xmi:id="_qKlR8NLWEeOx5avAN5V2sw" aux1="56 0 -54 180  56 -180 -54 0 " base_Element="_WvI04NIxEeOn54dzgFCK-w"/>
+  <graphics:Shape xmi:id="_qKlR8NLWEeOx5avAN5V2sw" aux1="" base_Element="_WvI04NIxEeOn54dzgFCK-w"/>
   <graphics:Shape xmi:id="_fGA7wNObEeOjndw3iBfygg" x="486" y="216" width="199" height="55" base_Element="_fFzgYNObEeOjndw3iBfygg" orientation="east"/>
   <graphics:Shape xmi:id="_-JLKcNOeEeOjndw3iBfygg" x="486" y="144" width="199" height="55" base_Element="_-JGR8NOeEeOjndw3iBfygg" orientation="east"/>
   <graphics:Shape xmi:id="_-xl1UNOeEeOjndw3iBfygg" x="486" y="180" width="199" height="55" base_Element="_-xd5gNOeEeOjndw3iBfygg" orientation="east"/>
@@ -411,4 +513,36 @@
   <graphics:Shape xmi:id="_L4pJINO1EeOSuJ566X241A" aux1="" base_Element="_nrp54NOxEeOSuJ566X241A"/>
   <graphics:Shape xmi:id="_PlgccNO1EeOSuJ566X241A" aux1="72 0 -68 -54  72 54 -68 0 " base_Element="_jA6JYNOuEeOqoJe30_hgzQ"/>
   <graphics:Shape xmi:id="_OD2nANO2EeOSuJ566X241A" aux1="0 288 108 0 " base_Element="_oXaXMNOyEeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_a45U4NO4EeOSuJ566X241A" x="576" y="504" width="217" height="55" base_Element="_a4XJYNO4EeOSuJ566X241A" orientation="west"/>
+  <graphics:Shape xmi:id="_ggIDINO4EeOSuJ566X241A" x="513" y="513" width="37" height="37" base_Element="_gakNsNO4EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_v310ANO4EeOSuJ566X241A" x="540" y="540" base_Element="_oYKWYNO4EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_2ZqiQNO4EeOSuJ566X241A" x="432" y="522" width="54" height="19" base_Element="_2ZoGANO4EeOSuJ566X241A" orientation="north"/>
+  <arctis:esm xmi:id="_TgtJ4NO5EeOSuJ566X241A" base_StateMachine="_Tgl1INO5EeOSuJ566X241A"/>
+  <arctis:event xmi:id="_Tgu_ENO5EeOSuJ566X241A" base_Transition="_TguYAdO5EeOSuJ566X241A" effects="_TgegYdO5EeOSuJ566X241A"/>
+  <arctis:event xmi:id="_TgyCYNO5EeOSuJ566X241A" base_Transition="_TgxbUNO5EeOSuJ566X241A" effects="_TggVkNO5EeOSuJ566X241A"/>
+  <arctis:event xmi:id="_Tgz3kNO5EeOSuJ566X241A" base_Transition="_TgzQgNO5EeOSuJ566X241A" triggers="_Tgix0NO5EeOSuJ566X241A"/>
+  <arctis:event xmi:id="_Tg1FsNO5EeOSuJ566X241A" base_Transition="_Tg0eoNO5EeOSuJ566X241A" effects="_TgjY4NO5EeOSuJ566X241A"/>
+  <arctis:event xmi:id="_Tg2T0NO5EeOSuJ566X241A" base_Transition="_Tg1swNO5EeOSuJ566X241A" triggers="_Tgj_8NO5EeOSuJ566X241A"/>
+  <arctis:event xmi:id="_Tg4JANO5EeOSuJ566X241A" base_Transition="_Tg3h8NO5EeOSuJ566X241A" triggers="_TgknANO5EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_Tg_dwNO5EeOSuJ566X241A" x="1" y="36" base_Element="_Tg-PoNO5EeOSuJ566X241A" orientation="west"/>
+  <graphics:Shape xmi:id="_ThLD8NO5EeOSuJ566X241A" x="164" y="107" base_Element="_ThJOwNO5EeOSuJ566X241A" orientation="east"/>
+  <graphics:Shape xmi:id="_ThPVYNO5EeOSuJ566X241A" x="1" y="72" base_Element="_ThOHQNO5EeOSuJ566X241A" orientation="west"/>
+  <graphics:Shape xmi:id="_ThTm0NO5EeOSuJ566X241A" x="18" y="18" base_Element="_Tg5XINO5EeOSuJ566X241A" orientation="south"/>
+  <graphics:Shape xmi:id="_ThUN4NO5EeOSuJ566X241A" x="191" y="130" base_Element="_Tg7zYNO5EeOSuJ566X241A" orientation="south"/>
+  <graphics:Shape xmi:id="_ThVcANO5EeOSuJ566X241A" x="18" y="18" base_Element="_ThMSENO5EeOSuJ566X241A" orientation="north"/>
+  <graphics:Shape xmi:id="_ThYfUNO5EeOSuJ566X241A" x="234" y="630" width="307" height="163" base_Element="_TgWkkNO5EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_dkgxINO5EeOSuJ566X241A" x="234" y="540" width="163" height="55" base_Element="_dkdGwNO5EeOSuJ566X241A" orientation="south"/>
+  <graphics:Shape xmi:id="_lSTjQNO5EeOSuJ566X241A" aux1="-126 0 -39 -162  -126 162 -39 0 " base_Element="_kqnRINO5EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_mH9Y4NO5EeOSuJ566X241A" aux1="-90 0 -21 -162 " base_Element="_kFjcQNO5EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_qCZOINO5EeOSuJ566X241A" x="468" y="504" base_Element="_kyOKcNO4EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_cyfo4NO6EeOSuJ566X241A" x="666" y="666" width="307" height="55" base_Element="_cxpUUNO6EeOSuJ566X241A" orientation="north"/>
+  <graphics:Shape xmi:id="_fyG0oNO6EeOSuJ566X241A" x="540" y="738" width="54" height="19" base_Element="_fyDxUNO6EeOSuJ566X241A" orientation="north"/>
+  <graphics:Shape xmi:id="_iQOc4NO6EeOSuJ566X241A" x="540" y="684" width="145" height="55" base_Element="_iQKygNO6EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_qzjv4NO6EeOSuJ566X241A" aux1="216 0 0 36 " base_Element="_hLJrMNO6EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_x9HzkNO6EeOSuJ566X241A" x="801" y="621" width="37" height="37" base_Element="_x9BF4NO6EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_KqZTsNO9EeOSuJ566X241A" x="162" y="126" width="54" height="19" base_Element="_KqW3cNO9EeOSuJ566X241A" orientation="north"/>
+  <graphics:Shape xmi:id="_RnX3cNO-EeOSuJ566X241A" x="378" y="540" width="199" height="55" base_Element="_RmuXMNO-EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_CsRUoNO_EeOSuJ566X241A" x="126" y="594" width="199" height="55" base_Element="_CrX8wNO_EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_FLLAANO_EeOSuJ566X241A" x="36" y="648" width="199" height="55" base_Element="_FKY84NO_EeOSuJ566X241A"/>
+  <graphics:Shape xmi:id="_sOKTYNO_EeOSuJ566X241A" x="252" y="486" width="199" height="55" base_Element="_sM358NO_EeOSuJ566X241A"/>
 </xmi:XMI>

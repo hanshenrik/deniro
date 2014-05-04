@@ -22,6 +22,10 @@ public class TaxiDispatcher extends Block {
 		this.pendingOrders = new LinkedList<Order>();
 	}
 	
+	public LinkedList<TaxiQueueItem> getAvailableTaxis() {
+		return availableTaxis;
+	}
+	
 	public TaxiQueueItem createTaxiQueueItem(String taxiInfo) {
 		String[] info = taxiInfo.split(";");
 		Position pos = new Position(Double.valueOf(info[1]), Double.valueOf(info[2]));
@@ -51,7 +55,12 @@ public class TaxiDispatcher extends Block {
 	
 	public String taxiUnavailable(Order order) {
 		System.out.println("TaxiDispatcher: "+order.getTaxiID()+" now unavailable");
-		availableTaxis.remove(order.getTaxiID());
+		
+		for (TaxiQueueItem t : availableTaxis) {
+			if (order.getTaxiID().equals(t.getTaxiID())) {
+				availableTaxis.remove(t);
+			}
+		}
 		
 		if (order.getUserID() == null) {
 			System.out.println("TaxiDispatcher: noReject");
@@ -102,12 +111,43 @@ public class TaxiDispatcher extends Block {
 		}
 	}
 	
+	public int numberOfAvailableTaxis() {
+		System.out.println("TaxiDispatcher: number of avail taxis: "+availableTaxis.size());
+		return availableTaxis.size();
+	}
+	
+	public void printThis() {
+		System.out.println("##### ");
+	}
+	
+	public Order printOrder(Order o) {
+		System.out.println("##### "+o.getOrderInfo());
+		return o;
+	}
+	
+	public LinkedList<TaxiQueueItem> printList(LinkedList<TaxiQueueItem> a) {
+		System.out.println("##### "+a.size());
+		return a;
+	}
+	
 	public Order assignTaxi(Order order) {
-		// 	add distance logic
 		order.setTaxiID(availableTaxis.pop().getTaxiID());
-		order.setMessage("Taxis are available. Hang on a minute, let us contact one...");
+		order.setMessage("Hang on a minute, contacting a taxi now...");
 		System.out.println("TaxiDispatcher: assigned "+order.getTaxiID()+" to order "+order.getUserID());
+		return order;
+	}
+	
+	public Order assignSpecificTaxi(Order order, TaxiQueueItem tqi) {
+		order.setTaxiID(tqi.getTaxiID());
+		order.setMessage("Hang on a minute, contacting a taxi now...");
 		
+		for (TaxiQueueItem t : availableTaxis) {
+			if (tqi.getTaxiID().equals(t.getTaxiID())) {
+				availableTaxis.remove(t);
+			}
+		}
+		
+		System.out.println("TaxiDispatcher: assigned specific "+order.getTaxiID()+" to order "+order.getUserID());
 		return order;
 	}
 	

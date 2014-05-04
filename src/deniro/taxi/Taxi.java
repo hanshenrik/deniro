@@ -125,4 +125,9 @@ public class Taxi extends Block {
 	public String clearString() {
 		return "";
 	}
+
+	public void setEmptyOrder() {
+		order = new Order("", "");
+		order.setTaxiID(alias_taxiID);
+	}
 }
