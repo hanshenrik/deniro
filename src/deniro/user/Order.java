@@ -1,13 +1,10 @@
 package deniro.user;
 
-import com.bitreactive.library.android.maps.model.Position;
-
 public class Order {
 
 	private String userID;
 	private String taxiID;
-	private String toAddress;
-	private String fromAddress;
+	private String address;
 	private String taxiType;
 	private String time;
 	private String message;
@@ -15,23 +12,16 @@ public class Order {
 	private boolean isCancelled;
 	private boolean isConfirmed;
 	
-	public Order(String userID, String fromAddress, String toAddress, String taxiType, String time) {
+	public Order(String userID, String address, String taxiType, String time) {
 		setUserID(userID);
-		setToAddress(toAddress);
-		setFromAddress(fromAddress);
+		setAddress(address);
 		setTaxiType(taxiType);
 		setTime(time);
 		setCancelled(false);
 	}
-	public Order(String taxiID,String fromAddress, String toAddress){
+	public Order(String taxiID, String address){
 		setTaxiID(taxiID);
-		setFromAddress(fromAddress);
-		setToAddress(toAddress);
-	}
-	public Order(String taxiID, String toAddress){
-		setTaxiID(taxiID);
-		setToAddress(toAddress);
-		fromAddress = null;
+		setAddress(address);
 	}
 	
 	public void setUserID(String userID) {
@@ -43,11 +33,11 @@ public class Order {
 	}
 
 	public String getAddress() {
-		return toAddress;
+		return address;
 	}
 
-	public void setToAddress(String address) {
-		this.toAddress = address;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	
 	private void setTaxiType(String taxiType) {
@@ -109,15 +99,7 @@ public class Order {
 	}
 
 	public void setPlaceInQueue(int placeInQueue) {
-		this.placeInQueue = placeInQueue;
-	}
-
-	public String getFromAddress() {
-		return fromAddress;
-	}
-
-	public void setFromAddress(String fromAddress) {
-		this.fromAddress = fromAddress;
+		this.placeInQueue = placeInQueue + 1;
 	}
 	
 }

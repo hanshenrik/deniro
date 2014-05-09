@@ -1,6 +1,5 @@
 package deniro.taxicentral;
 
-import deniro.user.Order;
 import no.ntnu.item.arctis.runtime.Block;
 
 public class TaxiCentral extends Block {
@@ -17,14 +16,4 @@ public class TaxiCentral extends Block {
 		return stringTopics;
 	}
 	
-	public Object receivedObject(Object o) {
-		Order order = (Order)o;
-		System.out.println("TaxiCentral: received this order "+order.getOrderInfo());
-		return o;
-	}
-
-	public String printThis(String s) {
-		System.out.println("TaxiCentral: "+s);
-		return s;
-	}
 }

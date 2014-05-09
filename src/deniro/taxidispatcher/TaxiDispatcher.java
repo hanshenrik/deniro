@@ -38,9 +38,14 @@ public class TaxiDispatcher extends Block {
 	}
 
 	public void taxiOffDuty(TaxiQueueItem tqi) {
+		for (TaxiQueueItem t : availableTaxis) {
+			if (tqi.getTaxiID().equals(t.getTaxiID())) {
+				availableTaxis.remove(t);
+				registeredTaxis.remove(t);
+			}
+		}
+		
 		System.out.println("TaxiDispatcher: "+tqi+" now off duty (and unavailable)");
-		availableTaxis.remove(tqi);
-		registeredTaxis.remove(tqi);
 	}
 	
 	public Order taxiAvailable(TaxiQueueItem tqi) {
@@ -48,7 +53,9 @@ public class TaxiDispatcher extends Block {
 		availableTaxis.add(tqi);
 		
 		if (!pendingOrders.isEmpty()) {
-			return pendingOrders.pop();
+			Order order = pendingOrders.pop();
+			order.setPlaceInQueue(0);
+			return order;
 		}
 		return null;
 	}
@@ -71,7 +78,15 @@ public class TaxiDispatcher extends Block {
 			return "assignTaxi";
 		} else {
 			order.setMessage("No taxis available at the moment, see queue number...");
-			order.setPlaceInQueue(pendingOrders.indexOf(order.getUserID()));
+			
+			for (Order o : pendingOrders) {
+				if (o.getUserID().equals(order.getUserID())) {
+					order.setPlaceInQueue(pendingOrders.indexOf(o));
+				}
+			}
+			
+			this.tempOrder = order; 
+			System.out.println("TaxiDispatcher: queueing "+order.getOrderInfo());
 			return "queue";
 		}
 	}
@@ -100,7 +115,7 @@ public class TaxiDispatcher extends Block {
 		}
 		
 		pendingOrders.add(order);
-		order.setPlaceInQueue(pendingOrders.indexOf(order.getUserID()));
+		order.setPlaceInQueue(pendingOrders.indexOf(order));
 		
 		if (!availableTaxis.isEmpty()) {
 			System.out.println("TaxiDispatcher: taxis are available!");
@@ -116,20 +131,6 @@ public class TaxiDispatcher extends Block {
 		return availableTaxis.size();
 	}
 	
-	public void printThis() {
-		System.out.println("##### ");
-	}
-	
-	public Order printOrder(Order o) {
-		System.out.println("##### "+o.getOrderInfo());
-		return o;
-	}
-	
-	public LinkedList<TaxiQueueItem> printList(LinkedList<TaxiQueueItem> a) {
-		System.out.println("##### "+a.size());
-		return a;
-	}
-	
 	public Order assignTaxi(Order order) {
 		order.setTaxiID(availableTaxis.pop().getTaxiID());
 		order.setMessage("Hang on a minute, contacting a taxi now...");
@@ -141,6 +142,9 @@ public class TaxiDispatcher extends Block {
 		order.setTaxiID(tqi.getTaxiID());
 		order.setMessage("Hang on a minute, contacting a taxi now...");
 		
+		System.out.println("order: "+order );
+		System.out.println("tqi: "+tqi);
+		System.out.println("availableTaxis: "+availableTaxis);
 		for (TaxiQueueItem t : availableTaxis) {
 			if (tqi.getTaxiID().equals(t.getTaxiID())) {
 				availableTaxis.remove(t);
@@ -151,11 +155,11 @@ public class TaxiDispatcher extends Block {
 		return order;
 	}
 	
-	public String requestCancelled(Order order) {
+	public Order requestCancelled(Order order) {
 		System.out.println("TaxiDispatcher: cancelling "+order.getOrderInfo());
 		// not possible after taxi has confirmed!
 		
-		for (TaxiQueueItem tqi : availableTaxis) {
+		for (TaxiQueueItem tqi : registeredTaxis) {
 			if (tqi.getTaxiID().equals(order.getTaxiID())) {
 				availableTaxis.add(tqi);
 			}
@@ -169,7 +173,7 @@ public class TaxiDispatcher extends Block {
 		
 		order.setMessage("Order cancelled!");
 		
-		return order.getUserID();
+		return order;
 	}
 
 	public String getUserID(Order order) {

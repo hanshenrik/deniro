@@ -55,9 +55,4 @@ public class CalculatingRoute extends Block {
 		return availableTaxis.get(index);
 	}
 
-	public String printMe(String s) {
-		System.out.println("CalculatingRoute: "+s);
-		return s;
-	}
-
 }

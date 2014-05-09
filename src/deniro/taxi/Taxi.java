@@ -94,6 +94,7 @@ public class Taxi extends Block {
 	}
 	
 	public MapUpdate setMapUpdate(String status) {
+		System.out.println("updating map");
 		mapUpdate = new MapUpdate();
 		Marker marker = null;
 		if (status.equals("onduty") || status.equals("unavailable")) {
@@ -113,7 +114,7 @@ public class Taxi extends Block {
 		
 		mapUpdate.addMarker(marker);
 		mapUpdate.setCenter(position);
-		mapUpdate.setZoom(15);
+		mapUpdate.setZoom(14);
 		return mapUpdate;
 	}
 	

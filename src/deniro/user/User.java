@@ -15,7 +15,7 @@ public class User extends Block {
 	public String createRequest(String request) {
 		String[] params = request.split(";");
 		
-		String toAddress = params[0];
+		String address = params[0];
 		
 		// default values for type and time
 		String taxiType = "regular";
@@ -38,7 +38,7 @@ public class User extends Block {
 			time = params[2];
 		}
 		
-		order = new Order(alias_userID, "Elgesetergate 1", toAddress, taxiType, time);
+		order = new Order(alias_userID, address, taxiType, time);
 		System.out.println("User: Request from " + order.getUserID() +
 				" created at user side! " + order.getOrderInfo());
 		return "userRequest";
@@ -46,6 +46,7 @@ public class User extends Block {
 
 	public String cancelRequest() {
 		System.out.println("User: Request from " + alias_userID + " cancelled at user side!");
+		System.out.println("User: "+order.getTaxiID());
 		order.setCancelled(true);
 		return "userCancel";
 	}
@@ -53,13 +54,16 @@ public class User extends Block {
 	public static String getAlias(String alias) {
 		return alias;
 	}
-	
-	public static String getAlias(Order order) {
-		return order.getUserID();
-	}
+//	
+//	public static String getAlias(Order order) {
+//		return order.getUserID();
+//	}
 	
 	public String extractMessage(Order order) {
-		return order.getOrderInfo();
+		if (order.getPlaceInQueue() > 0) {
+			return order.getMessage() + ", Queue: " + order.getPlaceInQueue();
+		}
+		return order.getMessage();
 	}
 
 	public String createSubscribeTopics(String userID) {
@@ -68,11 +72,6 @@ public class User extends Block {
 
 	public Order castToOrder(Object o) {
 		return (Order)o;
-	}
-
-	public String printThis(String s) {
-		System.out.println("User: topic is "+s);
-		return s;
 	}
 	
 	public void publishOK() {
